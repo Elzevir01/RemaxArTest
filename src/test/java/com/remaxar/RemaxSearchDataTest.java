@@ -1,12 +1,16 @@
 package com.remaxar;
 
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
+//import org.testng.log4testng.Logger;
 
+//import org.apache.log4j.Logger;
 import Driver.BrowserFactory;
 import Driver.DriverFactory;
 
 import org.testng.annotations.BeforeClass;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import PageModel.RemaxMain;
@@ -14,16 +18,22 @@ import PageModel.RemaxMain;
 public class RemaxSearchDataTest {
 	String url = "";
 	WebDriver driver;
-	Logger Log = Logger.getLogger(RemaxSearchDataTest.class);
+	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);//Logger.getLogger??
 	BrowserFactory bf = new BrowserFactory();
 	
+	
   @Test(priority=1)
-  public void TestBusdquedaPortada() {
+  public void TestBusdquedaPortada() throws InterruptedException {
+	  
+	  BasicConfigurator.configure();  
 	  RemaxMain rm = new RemaxMain(driver);
 	  url = "https://www.remax.com.ar/";
+	  Log.info("ingresando a remax.com");
 	  rm.navegar(driver, url);
 	  rm.alquilar();
-	  
+	  rm.textCordoba();
+	  rm.opcionCordoba();
+	  rm.propiedad();
   }
   @BeforeClass
   public void SetUp() {
@@ -33,7 +43,7 @@ public class RemaxSearchDataTest {
 
   @AfterClass
   public void TearDown() throws InterruptedException {
-	  Thread.sleep(5000);
+	  Thread.sleep(3000);
 	  bf.removeDriver();
   }
 

@@ -51,11 +51,8 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- ALLURE TEST-NG -->
-		<!-- <dependency>
-			<groupId>io.qameta.allure</groupId>
-			<artifactId>allure-testng</artifactId>
-			<version>2.17.2</version>
-		</dependency>-->
+		<!-- <dependency> <groupId>io.qameta.allure</groupId> <artifactId>allure-testng</artifactId> 
+			<version>2.17.2</version> </dependency> -->
 		<!-- LOG4J -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -68,5 +65,25 @@
 			<artifactId>log4j-api</artifactId>
 			<version>2.17.1</version>
 		</dependency>
+		<!-- Log4j-slf4j impl -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.15.0</version>
+		</dependency>
+		<!-- SLF4J API Module -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.0-alpha6</version>
+		</dependency>
+		<!-- SLF4J LOG4J 12 Binding -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>2.0.0-alpha6</version>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 </project>
