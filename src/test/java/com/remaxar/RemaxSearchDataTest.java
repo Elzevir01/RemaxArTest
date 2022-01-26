@@ -13,6 +13,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
+
+import PageModel.RemaxList;
 import PageModel.RemaxMain;
 
 public class RemaxSearchDataTest {
@@ -20,6 +22,8 @@ public class RemaxSearchDataTest {
 	WebDriver driver;
 	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);//Logger.getLogger??
 	BrowserFactory bf = new BrowserFactory();
+	String minimo, maximo;
+	
 	
 	
   @Test(priority=1)
@@ -34,6 +38,11 @@ public class RemaxSearchDataTest {
 	  rm.textCordoba();
 	  rm.opcionCordoba();
 	  rm.propiedad();
+	  RemaxList rl = new RemaxList(driver);
+	  rl.alquilerAVenta();
+	  minimo="5000";
+	  maximo="30000";
+	  rl.precio(minimo,maximo);
   }
   @BeforeClass
   public void SetUp() {

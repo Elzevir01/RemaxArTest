@@ -79,6 +79,5 @@ public class RemaxMain extends Base{
 		clickElement(driver, tipoConsultorio);
 		clickElement(driver, cerrarMenuTIpo);
 		clickElement(driver, btnBuscar);
-		js.waitForPageToLoad(driver);
 	}
 }
