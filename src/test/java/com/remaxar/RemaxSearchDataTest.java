@@ -42,7 +42,8 @@ public class RemaxSearchDataTest {
 	  rl.alquilerAVenta();
 	  minimo="5000";
 	  maximo="30000";
-	  rl.precio(minimo,maximo);
+	  rl.precio();
+	  rl.montoPrecio(minimo, maximo);
   }
   @BeforeClass
   public void SetUp() {

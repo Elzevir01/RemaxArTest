@@ -24,16 +24,16 @@ public class RemaxMain extends Base{
 	@FindBy(css = "#cdk-overlay-2")
 	WebElement lista;
 	
-	@FindBy(css = "#mat-option-19 > span:nth-child(1) > div")
+	@FindBy(xpath = "//*[@id=\"mat-option-10\"]")
 	WebElement opcionCordoba;
 	//selectByVisibleText
 	//#mat-option-422 > span:nth-child(1) > div
 	
 	@FindBy(css = "#property-type")
 	WebElement tipoPropiedad;
-	@FindBy(css = "#mat-option-6")
+	@FindBy(xpath = "//span[contains(text(),'Oficina')]")
 	WebElement tipoOficina;
-	@FindBy(css = "#mat-option-7")
+	@FindBy(xpath = "//span[contains(text(),'Consultorio')]")
 	WebElement tipoConsultorio;
 	
 	@FindBy(css = ".cdk-overlay-backdrop")

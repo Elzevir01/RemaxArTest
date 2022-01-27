@@ -17,12 +17,12 @@ public class RemaxList extends Base{
 	/////MENU PRECIO/////
 	@FindBy(css = "#select-price")
 	WebElement btnPrecio;
-	@FindBy(css = "#mat-input-2")
-	WebElement precioDesde;
-	@FindBy(css = "#mat-input-3")
-	WebElement precioHasta;
-	@FindBy(xpath = "//button[contains(text(),'Aplicar filtro')]")
-	WebElement aplicarPrecio;
+	@FindBy(xpath="//*[@id=\"mat-input-0\"]")		
+	WebElement precioDesde;////*[@id=\"from\"]")//css = "#mat-input-2")
+	@FindBy(xpath="//*[@id=\"mat-input-1\"]")		
+	WebElement precioHasta;//*[@id=\"to\"]")//css = "#mat-input-3")
+	@FindBy(xpath ="//button[contains(text(),'Aplicar filtro')]")	
+	WebElement aplicarPrecio;// "//button[contains(text(),'Aplicar filtro')]")
 	
 	/////CARD LINK/////
 	@FindBy(css="qr-card-prop.ng-star-inserted:nth-child(1)")
@@ -48,11 +48,13 @@ public class RemaxList extends Base{
 		clickElement(driver, aplicarTipo);
 		Thread.sleep(3000);
 	}
-	public void precio(String desde, String hasta) throws InterruptedException {
+	public void precio(){
 		clickElement(driver, btnPrecio);
+		}
+	public void montoPrecio(String desde, String hasta) throws InterruptedException  {
 		sendKey(driver, precioDesde, desde);
 		sendKey(driver, precioHasta, hasta);
 		clickElement(driver, aplicarPrecio);
 		Thread.sleep(3000);
-		}
+	}
 }
