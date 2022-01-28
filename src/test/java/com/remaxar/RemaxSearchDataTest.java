@@ -45,6 +45,10 @@ public class RemaxSearchDataTest {
 	  rl.precio();
 	  rl.montoPrecio(minimo, maximo);
   }
+  @Test(priority=2)
+  public void testInfo() {
+	  
+  }
   @BeforeClass
   public void SetUp() {
 	  DriverFactory.getInstance().setDriver(bf.createBrowserIntance("CHROME"));
