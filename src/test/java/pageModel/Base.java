@@ -1,11 +1,11 @@
-package PageModel;
+package pageModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
-import Js.jScript;
+import js.jScript;
 
 public class Base {
 	WebDriver driver;
@@ -57,4 +57,8 @@ public class Base {
 	public String titulo(WebDriver driver) {
 		return driver.getTitle();
 	}
+	public String getText(WebElement elemento) {
+		js.highLight(driver, elemento);
+		return elemento.getText();
+}
 }

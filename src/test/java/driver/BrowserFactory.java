@@ -1,4 +1,4 @@
-package Driver;
+package driver;
 
 import java.time.Duration;
 

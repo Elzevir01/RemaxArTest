@@ -1,4 +1,4 @@
-package PageModel;
+package pageModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,7 +38,6 @@ public class RemaxList extends Base{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-
 	public RemaxList() {
 
 	}
@@ -56,5 +55,14 @@ public class RemaxList extends Base{
 		sendKey(driver, precioHasta, hasta);
 		clickElement(driver, aplicarPrecio);
 		Thread.sleep(3000);
+	}
+	public void card1() {
+		clickElement(driver, cardLink1);
+	}
+	public void card2() {
+		clickElement(driver, cardLink2);
+	}
+	public void card3() {
+		clickElement(driver, cardLink3);
 	}
 }

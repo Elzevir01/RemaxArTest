@@ -1,4 +1,4 @@
-package PageModel;
+package pageModel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Js.jScript;
+import js.jScript;
 
 public class RemaxMain extends Base{
 	WebDriver driver;
@@ -52,6 +52,7 @@ public class RemaxMain extends Base{
 	public RemaxMain() {
 
 	}
+	
 	//////METODOS /////
 	public void alquilar() {
 		clickElement(driver, btnAlquilar);
