@@ -1,6 +1,8 @@
 package data;
 
 public class Propiedad {
+	/////VARIABLES/////
+	private String titulo;
 	private String descripcion;
 	private String superficieTotal;
 	private String superficieCubierta;
@@ -8,8 +10,8 @@ public class Propiedad {
 	private String aptoProfecional;
 	private String pisosPropiedad;
 	private String expensas;
-	private String titulo;
-	
+	String linea = "#############################################################################";
+	/////METODOS/////
 	public String getTitulo() {
 		return titulo;
 	}
@@ -65,21 +67,25 @@ public class Propiedad {
 		this.expensas = expensas;
 	}
 	String precioDolar;
-	public Propiedad(String titulo, String precioDolar, String descripcion, String superficieTotal,
-			String superficieCubierta, String baños, String aptoProfecional, String pisosPropiedad, String expensas) {
-		super();
+	public Propiedad(String titulo, String descripcion, String precioDolar, String superficieTotal,
+			String superficieCubierta, String baños, String pisosPropiedad, String aptoProfecional,
+			String expensas) {
 		this.titulo = titulo;
-		this.precioDolar = precioDolar;
 		this.descripcion = descripcion;
+		this.precioDolar = precioDolar;
 		this.superficieTotal = superficieTotal;
 		this.superficieCubierta = superficieCubierta;
 		this.baños = baños;
-		this.aptoProfecional = aptoProfecional;
 		this.pisosPropiedad = pisosPropiedad;
+		this.aptoProfecional = aptoProfecional;
 		this.expensas = expensas;
 	}
 	public Propiedad() {
 		
 	}
-	
+	public String propiedadToString() {
+		return linea+"\n"+titulo+"\n"+descripcion+"\n"+precioDolar+"\n"+superficieTotal+"\n"+
+	superficieCubierta+"\n"+baños+"\n"+pisosPropiedad+"\n"+aptoProfecional+"\n"+
+				expensas;
+	}
 }

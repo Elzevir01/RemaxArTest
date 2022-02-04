@@ -42,11 +42,11 @@ public class Base {
 	public boolean checkElement(WebElement elemento) {
 	    try {
 	    	if (elemento.isDisplayed()) {
-	    		System.out.println("Elemento: ["+elemento.getText()+" ] Existe");
+	    		System.out.println("Elemento: [ "+elemento.getText()+" ] Existe");
 			}
 	    	return true;
 	    }catch(org.openqa.selenium.NoSuchElementException e) {
-	    	System.out.println("Elemento: ["+elemento.getText()+" ]X NO Existe");
+	    	System.out.println("Elemento: [ "+elemento.getText()+" ]X NO Existe");
 	    	return false;
 	    }
 	}
@@ -58,7 +58,8 @@ public class Base {
 		return driver.getTitle();
 	}
 	public String getText(WebElement elemento) {
-		js.highLight(driver, elemento);
+		if(checkElement(elemento))
 		return elemento.getText();
+		else return "";
 }
 }

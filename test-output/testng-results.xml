@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-26T21:33:59 ART" name="Default suite" finished-at="2022-01-26T21:34:25 ART" duration-ms="26695">
+  <suite started-at="2022-02-04T19:31:13 ART" name="Default suite" finished-at="2022-02-04T19:31:50 ART" duration-ms="37256">
     <groups>
     </groups>
-    <test started-at="2022-01-26T21:33:59 ART" name="Default test" finished-at="2022-01-26T21:34:25 ART" duration-ms="26695">
+    <test started-at="2022-02-04T19:31:13 ART" name="Default test" finished-at="2022-02-04T19:31:50 ART" duration-ms="37256">
       <class name="com.remaxar.RemaxSearchDataTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.remaxar.RemaxSearchDataTest@65aa6596]" started-at="2022-01-26T21:33:59 ART" name="SetUp" finished-at="2022-01-26T21:34:01 ART" duration-ms="1713" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.remaxar.RemaxSearchDataTest@6fff46bf]" started-at="2022-02-04T19:31:13 ART" name="SetUp" finished-at="2022-02-04T19:31:15 ART" duration-ms="2749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestBusdquedaPortada()[pri:1, instance:com.remaxar.RemaxSearchDataTest@65aa6596]" started-at="2022-01-26T21:34:01 ART" name="TestBusdquedaPortada" finished-at="2022-01-26T21:34:22 ART" duration-ms="21758" status="PASS">
+        <test-method signature="TestBusdquedaPortada()[pri:1, instance:com.remaxar.RemaxSearchDataTest@6fff46bf]" started-at="2022-02-04T19:31:15 ART" name="TestBusdquedaPortada" finished-at="2022-02-04T19:31:26 ART" duration-ms="10841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestBusdquedaPortada -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.remaxar.RemaxSearchDataTest@65aa6596]" started-at="2022-01-26T21:34:22 ART" name="TearDown" finished-at="2022-01-26T21:34:25 ART" duration-ms="3191" status="PASS">
+        <test-method signature="testInfo()[pri:2, instance:com.remaxar.RemaxSearchDataTest@6fff46bf]" started-at="2022-02-04T19:31:26 ART" name="testInfo" finished-at="2022-02-04T19:31:47 ART" duration-ms="20368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInfo -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.remaxar.RemaxSearchDataTest@6fff46bf]" started-at="2022-02-04T19:31:47 ART" name="TearDown" finished-at="2022-02-04T19:31:50 ART" duration-ms="3230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

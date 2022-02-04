@@ -44,31 +44,58 @@ public class RemaxDetalles extends pageModel.Base{
 	}
 	////METODOS/////
 	public String getTitulo() {
-		return getText(titulo);
+		try {
+		return getText(titulo);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getPrecioDolar() {
-		return getText(precioDolar);
+		try {
+		return getText(precioDolar);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getDescripcion() {
-		return getText(descripcion);
+		try{
+			return getText(descripcion);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getSuperficieTotal() {
-		return getText(superficieTotal);
+		try{
+		return getText(superficieTotal);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getSuperficieCubierta() {
-		return getText(superficieCubierta);
+		try{
+			return getText(superficieCubierta);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getBaños() {
-		return getText(baños);
+		try {
+		return getText(baños);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getAptoProfesional() {
-		return getText(aptoProfesional);
+		try {
+		return getText(aptoProfesional);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getExpensas() {
-		return getText(expensas);
+		try{
+			return getText(expensas);}
+		catch(Exception e){
+			return "";}
 	}
 	public String getPisosPropiedad() {
-		return getText(pisosPropiedad);
+		try{
+			return getText(pisosPropiedad);}
+		catch(Exception e){
+			return "";}
 	}
 	////Xpath=//label[starts-with(@id,'message')]
 	////*[@id="second-item"]//*[@class="feature-detail"]
