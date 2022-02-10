@@ -62,4 +62,7 @@ public class Base {
 		return elemento.getText();
 		else return "";
 }
+	public void clearText(WebElement elemento) {
+		elemento.clear();
+	}
 }

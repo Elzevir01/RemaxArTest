@@ -11,6 +11,7 @@ public class Propiedad {
 	private String pisosPropiedad;
 	private String expensas;
 	String linea = "#############################################################################";
+	
 	/////METODOS/////
 	public String getTitulo() {
 		return titulo;
@@ -66,6 +67,7 @@ public class Propiedad {
 	public void setExpensas(String expensas) {
 		this.expensas = expensas;
 	}
+	/////CONSTRUCTOR/////
 	String precioDolar;
 	public Propiedad(String titulo, String descripcion, String precioDolar, String superficieTotal,
 			String superficieCubierta, String baños, String pisosPropiedad, String aptoProfecional,
@@ -83,6 +85,7 @@ public class Propiedad {
 	public Propiedad() {
 		
 	}
+	/////toSTRING/////
 	public String propiedadToString() {
 		return linea+"\n"+titulo+"\n"+descripcion+"\n"+precioDolar+"\n"+superficieTotal+"\n"+
 	superficieCubierta+"\n"+baños+"\n"+pisosPropiedad+"\n"+aptoProfecional+"\n"+

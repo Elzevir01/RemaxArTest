@@ -6,6 +6,7 @@
       <class name="com.remaxar.RemaxSearchDataTest">
         <methods>
           <include name="testInfo"/>
+          <include name="TestBusdquedaPortada"/>
           <include name="TearDown"/>
           <include name="SetUp"/>
         </methods>

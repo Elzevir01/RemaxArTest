@@ -1,1 +1,90 @@
-2022-02-04 16:32:32 INFO  RemaxSearchDataTest:38 - ingresando a remax.com
+2022-02-08 22:00:29.356 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
+2022-02-08 22:00:45.223 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
+2022-02-08 22:01:02.947 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
+2022-02-08 22:01:15.061 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
+2022-02-08 22:01:19.757 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:56)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-02-08 22:01:28.537 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:65)] - ingresando los 3 primeros link y recolectando sus datos
+2022-02-08 22:01:36.678 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:99)] - RECOLECTANDO DATOS PARA ARCHIVO .TXT
+2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+
+
+
+expensas: ARS 1.700
+2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+
+
+
+expensas: ARS 1.700
+2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+baños: 1
+
+
+expensas: ARS 1.700
+2022-02-08 22:01:56.546 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
+2022-02-08 22:02:08.206 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
+2022-02-08 22:02:12.838 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:56)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-02-08 22:02:22.879 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:65)] - ingresando los 3 primeros link y recolectando sus datos
+2022-02-08 22:02:30.057 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:99)] - RECOLECTANDO DATOS PARA ARCHIVO .TXT
+2022-02-08 22:02:30.058 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+
+
+
+expensas: ARS 1.700
+2022-02-08 22:02:30.058 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+
+
+
+expensas: ARS 1.700
+2022-02-08 22:02:30.059 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
+Oficina en el Centro de Córdoba
+Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
+Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
+La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
+Llamános para verla y con gusto coordinamos visita.
+12.500 USD
+superficie total: 22 m²
+superficie cubierta: 22 m²
+baños: 1
+
+
+expensas: ARS 1.700

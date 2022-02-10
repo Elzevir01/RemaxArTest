@@ -12,7 +12,7 @@ public class PrintText {
 			String carpeta = System.getProperty("user.dir") + File.separator + "datos";
 			File directorio = new File(carpeta);
 			File file = new File(carpeta + File.separator + "datos.txt");
-
+			/////SI EL DIRECTORIO EXISTE/////
 			if (!directorio.exists()) {
 				directorio.mkdir();
 			} else if (directorio.mkdirs()) {

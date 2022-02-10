@@ -46,36 +46,39 @@ public class RemaxSearchDataTest {
 
 	@Test(priority = 2)
 	public void testInfo() throws InterruptedException {
+		///// FILTRAR MAS DATOS/////
+		
+		Log.info("ingresando filtro: cambiando alquiler por venta");
 		RemaxList rl = new RemaxList(driver);
 		rl.alquilerAVenta();
 		minimo = "5000";
 		maximo = "30000";
+		Log.info("ingresando filtro: monto( U$D"+minimo+" U$D"+maximo+")");
 		rl.precio();
 		rl.montoPrecio(minimo, maximo);
-		
+
 		int cc = rl.cardCount();
-		Propiedad[] pr = new Propiedad[cc] ;//[cc+1]
-		PrintText tx =new PrintText();
-		RemaxDetalles rd1, rd2, rd3; 
-		
-		////ABRIR LAS 3 PRIMERAS TARJETAS Y CAPTURAR SUS DATOS////
+		Propiedad[] pr = new Propiedad[cc];// [cc+1]
+		PrintText tx = new PrintText();
+
+		//// ABRIR LAS 3 PRIMERAS TARJETAS Y CAPTURAR SUS DATOS////
+		Log.info("ingresando los 3 primeros link y recolectando sus datos");
 		for (int i = 0; i < cc; i++) {
-			if(i==0) 
+			if (i == 0)
 				rl.card1();
-			if(i==1) 
+			if (i == 1)
 				rl.card2();
-			if(i==2) 
+			if (i == 2)
 				rl.card3();
-				
-				
+
 			///// MOVIENDO A OTRA PESTAÑA/////
 			ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 			driver.switchTo().window(tabs2.get(1));
-			
-			/////PROPIEDAD /////			
+
+			///// PROPIEDAD /////
 			rd = new RemaxDetalles(driver);
 			pr[i] = new Propiedad();
-						
+
 			pr[i].setTitulo(rd.getTitulo());
 			pr[i].setDescripcion(rd.getDescripcion());
 			pr[i].setPrecioDolar(rd.getPrecioDolar());
@@ -92,10 +95,11 @@ public class RemaxSearchDataTest {
 			driver.close();
 			driver.switchTo().window(tabs2.get(0));
 		}
-		/////////////////////////////////////////////////////////////////////
+		///// ESCRIBIR TXT LOS 3 LINK/////
+		Log.info("RECOLECTANDO DATOS PARA ARCHIVO .TXT");
 		tx.crearTxt();
-		for(int t=0; t<cc; t++)
-		{	
+		for (int t = 0; t < cc; t++) {
+			Log.info(pr[t].propiedadToString());
 			tx.escribirTextos(pr[t].propiedadToString());
 		}
 	}

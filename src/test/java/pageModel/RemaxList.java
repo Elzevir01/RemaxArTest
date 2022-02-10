@@ -55,7 +55,9 @@ public class RemaxList extends Base {
 	}
 
 	public void montoPrecio(String desde, String hasta) throws InterruptedException {
+		clearText(precioDesde);
 		sendKey(driver, precioDesde, desde);
+		clearText(precioHasta);
 		sendKey(driver, precioHasta, hasta);
 		clickElement(driver, aplicarPrecio);
 		Thread.sleep(5000);
@@ -72,20 +74,6 @@ public class RemaxList extends Base {
 	public void card3() {
 		clickElement(driver, cardLink3);
 	}
-
-	/*public void card(int numero) {
-		switch (numero) {
-		case 1:
-			clickElement(driver, cardLink1);
-			break;
-		case 2:
-			clickElement(driver, cardLink2);
-			break;
-		case 3:
-			clickElement(driver, cardLink3);
-			break;
-		}
-	}*/
 
 	public int cardCount() {
 		int c = 0;
