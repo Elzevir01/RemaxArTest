@@ -3,7 +3,6 @@ package txt;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 
 public class PrintText {
 
@@ -24,7 +23,6 @@ public class PrintText {
 			if (!file.exists()) {
 				file.createNewFile();
 			} else if (file.exists()) {
-				///////////borrar
 				file.delete();
 				file.createNewFile();
 				System.out.println("ya creado datos.txt");
@@ -35,36 +33,6 @@ public class PrintText {
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void escribirTxT(String titulo, String descripcion, String precioDolar, String superficieTotal,
-			String superficieCubierta, String baños, String aptoProfecional, String pisosPropiedad, String expensas) {
-
-		// String superficieCubierta, String baños,String aptoProfecional,String
-		// pisosPropiedad,String expensas;
-		try {
-			String archivo = System.getProperty("user.dir") + File.separator + "datos" + File.separator + "datos.txt";
-			PrintWriter writer = new PrintWriter(archivo, "UTF-8");
-			// FileOutputStream writer = new FileOutputStream(archivo, true) ;
-			writer.println("#############################################################################");
-			writer.println("# " + titulo + "");
-			writer.println("# " + descripcion + "");
-			writer.println("#---------------------------------------------------------------------------");
-			writer.println("# " + precioDolar + "");
-			writer.println("# " + superficieTotal + "");
-			writer.println("# " + superficieCubierta + "");
-			writer.println("# " + baños + "");
-			writer.println("# " + aptoProfecional + "");
-			writer.println("# " + pisosPropiedad + "");
-			writer.println("# " + expensas + "");
-			writer.println("#---------------------------------------------------------------------------");
-
-			writer.flush();
-			writer.close();
-
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

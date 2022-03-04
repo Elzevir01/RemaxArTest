@@ -1,29 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-08T22:01:54 ART" name="Default suite" finished-at="2022-02-08T22:02:33 ART" duration-ms="38470">
+  <suite started-at="2022-03-02T13:41:22 ART" name="TestSuite" finished-at="2022-03-02T13:44:19 ART" duration-ms="177794">
     <groups>
     </groups>
-    <test started-at="2022-02-08T22:01:54 ART" name="Default test" finished-at="2022-02-08T22:02:33 ART" duration-ms="38470">
+    <test started-at="2022-03-02T13:41:22 ART" name="CHROME" finished-at="2022-03-02T13:42:59 ART" duration-ms="97278">
       <class name="com.remaxar.RemaxSearchDataTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.remaxar.RemaxSearchDataTest@6548bb7d]" started-at="2022-02-08T22:01:54 ART" name="SetUp" finished-at="2022-02-08T22:01:56 ART" duration-ms="1671" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:com.remaxar.RemaxSearchDataTest@2ab9e43e]" started-at="2022-03-02T13:41:22 ART" name="SetUp" finished-at="2022-03-02T13:41:53 ART" duration-ms="31262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="TestBusdquedaPortada()[pri:1, instance:com.remaxar.RemaxSearchDataTest@6548bb7d]" started-at="2022-02-08T22:01:56 ART" name="TestBusdquedaPortada" finished-at="2022-02-08T22:02:08 ART" duration-ms="11652" status="PASS">
+        <test-method signature="Test_1_BusdquedaPortada()[pri:1, instance:com.remaxar.RemaxSearchDataTest@2ab9e43e]" started-at="2022-03-02T13:41:53 ART" name="Test_1_BusdquedaPortada" finished-at="2022-03-02T13:42:11 ART" duration-ms="17617" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestBusdquedaPortada -->
-        <test-method signature="testInfo()[pri:2, instance:com.remaxar.RemaxSearchDataTest@6548bb7d]" started-at="2022-02-08T22:02:08 ART" name="testInfo" finished-at="2022-02-08T22:02:30 ART" duration-ms="21857" status="PASS">
+        </test-method> <!-- Test_1_BusdquedaPortada -->
+        <test-method signature="test_2_FiltrosRecoleccion()[pri:2, instance:com.remaxar.RemaxSearchDataTest@2ab9e43e]" started-at="2022-03-02T13:42:11 ART" name="test_2_FiltrosRecoleccion" finished-at="2022-03-02T13:42:56 ART" duration-ms="44966" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testInfo -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.remaxar.RemaxSearchDataTest@6548bb7d]" started-at="2022-02-08T22:02:30 ART" name="TearDown" finished-at="2022-02-08T22:02:33 ART" duration-ms="3177" status="PASS">
+        </test-method> <!-- test_2_FiltrosRecoleccion -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.remaxar.RemaxSearchDataTest@2ab9e43e]" started-at="2022-03-02T13:42:56 ART" name="TearDown" finished-at="2022-03-02T13:42:59 ART" duration-ms="2683" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
       </class> <!-- com.remaxar.RemaxSearchDataTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- CHROME -->
+    <test started-at="2022-03-02T13:42:59 ART" name="OPERA" finished-at="2022-03-02T13:44:19 ART" duration-ms="80391">
+      <class name="com.remaxar.RemaxSearchDataTest">
+        <test-method is-config="true" signature="SetUp(java.lang.String,java.lang.String)[pri:0, instance:com.remaxar.RemaxSearchDataTest@30ffb2a6]" started-at="2022-03-02T13:42:59 ART" name="SetUp" finished-at="2022-03-02T13:43:34 ART" duration-ms="34451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[OPERA]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost:4444/wd/hub]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="Test_1_BusdquedaPortada()[pri:1, instance:com.remaxar.RemaxSearchDataTest@30ffb2a6]" started-at="2022-03-02T13:43:34 ART" name="Test_1_BusdquedaPortada" finished-at="2022-03-02T13:43:48 ART" duration-ms="14297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_1_BusdquedaPortada -->
+        <test-method signature="test_2_FiltrosRecoleccion()[pri:2, instance:com.remaxar.RemaxSearchDataTest@30ffb2a6]" started-at="2022-03-02T13:43:48 ART" name="test_2_FiltrosRecoleccion" finished-at="2022-03-02T13:44:18 ART" duration-ms="30666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2_FiltrosRecoleccion -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.remaxar.RemaxSearchDataTest@30ffb2a6]" started-at="2022-03-02T13:44:18 ART" name="TearDown" finished-at="2022-03-02T13:44:19 ART" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.remaxar.RemaxSearchDataTest -->
+    </test> <!-- OPERA -->
+  </suite> <!-- TestSuite -->
 </testng-results>

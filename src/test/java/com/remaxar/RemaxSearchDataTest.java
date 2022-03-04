@@ -1,8 +1,9 @@
 package com.remaxar;
 
 import org.testng.annotations.Test;
-//import org.testng.log4testng.Logger;
-import org.testng.annotations.BeforeClass;
+
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 
@@ -10,10 +11,16 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 
-import driver.BrowserFactory;
+import driver.BrowserFactoryCF;
 import driver.DriverFactory;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Link;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
 import pageModel.RemaxDetalles;
 import pageModel.RemaxList;
 import pageModel.RemaxMain;
@@ -21,19 +28,26 @@ import pageModel.RemaxMain;
 import data.Propiedad;
 import txt.PrintText;
 
+@Epic("Remax Search Test")
 public class RemaxSearchDataTest {
 	String url = "";
 	WebDriver driver;
-	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);// Logger.getLogger??
-	BrowserFactory bf = new BrowserFactory();
+	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);
+	BrowserFactoryCF bf = new BrowserFactoryCF();
 	String minimo, maximo;
 	RemaxDetalles rd;
-
+	RemaxMain rm;
+	RemaxList rl;
+	
+	@Severity(SeverityLevel.NORMAL)
+	@Description("Colocando los primeros filtros desde la portada")
+	@Story("1) Navegacion desde portada")
+	@Link(name="www.remax.com.ar/",url="https://www.remax.com.ar/")
 	@Test(priority = 1)
-	public void TestBusdquedaPortada() throws InterruptedException {
+	public void Test_1_BusdquedaPortada() throws InterruptedException {
 
 		BasicConfigurator.configure();
-		RemaxMain rm = new RemaxMain(driver);
+		rm = new RemaxMain(driver);
 		url = "https://www.remax.com.ar/";
 		Log.info("ingresando a remax.com");
 		rm.navegar(driver, url);
@@ -43,20 +57,29 @@ public class RemaxSearchDataTest {
 		rm.propiedad();
 
 	}
-
+	@Severity(SeverityLevel.BLOCKER)
+	@Description("Colocando los nuevos filtros de compra y precio, navegando "
+			+ "y recolectando los datos de los tres primeros links")
+	@Story("2) Agregado de filtros y recolectando datos")
+	@Link(name="www.remax.com.ar/listings/",url="https://www.remax.com.ar/listings/buy?page=0&pageSize=21&sort="
+			+ "-createdAt&in:operationId=1&pricein=1:5000:30000&locations=in:CB@C%C3%B3rdoba"
+			+ "::::::&filterCount=1&viewMode=list")
 	@Test(priority = 2)
-	public void testInfo() throws InterruptedException {
-		///// FILTRAR MAS DATOS/////
+	public void test_2_FiltrosRecoleccion() throws InterruptedException {
 		
+		///// FILTRAR MAS DATOS/////
 		Log.info("ingresando filtro: cambiando alquiler por venta");
-		RemaxList rl = new RemaxList(driver);
+		rl = new RemaxList(driver);
+		rl.esperarWeb();
+		Thread.sleep(5000);
 		rl.alquilerAVenta();
 		minimo = "5000";
 		maximo = "30000";
-		Log.info("ingresando filtro: monto( U$D"+minimo+" U$D"+maximo+")");
+		Log.info("ingresando filtro: monto( U$D" + minimo + " U$D" + maximo + ")");
 		rl.precio();
 		rl.montoPrecio(minimo, maximo);
-
+		rl.esperarWeb();
+		
 		int cc = rl.cardCount();
 		Propiedad[] pr = new Propiedad[cc];// [cc+1]
 		PrintText tx = new PrintText();
@@ -70,11 +93,14 @@ public class RemaxSearchDataTest {
 				rl.card2();
 			if (i == 2)
 				rl.card3();
-
+			Thread.sleep(3000);
+			rl.esperarWeb();
+			
 			///// MOVIENDO A OTRA PESTAÑA/////
 			ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
 			driver.switchTo().window(tabs2.get(1));
-
+			//rd.esperarWeb();
+			
 			///// PROPIEDAD /////
 			rd = new RemaxDetalles(driver);
 			pr[i] = new Propiedad();
@@ -96,23 +122,29 @@ public class RemaxSearchDataTest {
 			driver.switchTo().window(tabs2.get(0));
 		}
 		///// ESCRIBIR TXT LOS 3 LINK/////
-		Log.info("RECOLECTANDO DATOS PARA ARCHIVO .TXT");
+		Log.info("recolectando datos de los 3 primeros links para archivo .txt");
 		tx.crearTxt();
 		for (int t = 0; t < cc; t++) {
 			Log.info(pr[t].propiedadToString());
 			tx.escribirTextos(pr[t].propiedadToString());
 		}
 	}
-
-	@BeforeClass
-	public void SetUp() {
-		DriverFactory.getInstance().setDriver(bf.createBrowserIntance("CHROME"));
-		driver = DriverFactory.getInstance().getDriver();
+	@BeforeTest
+	@Parameters({"browser", "nodeUrl"})
+	public void SetUp(String browser, String nodeUrl) {
+		try {
+			bf = new BrowserFactoryCF();
+			DriverFactory.getInstance().setDriver(bf.setDriver(browser, nodeUrl));
+			driver = DriverFactory.getInstance().getDriver();
+			}catch(Exception exc){
+				Log.error("Causa : "+exc.getCause());
+				Log.error("Mensaje : "+exc.getMessage());
+				exc.printStackTrace();
+			}
 	}
 
-	@AfterClass
-	public void TearDown() throws InterruptedException {
-		Thread.sleep(3000);
+	@AfterTest
+	public void TearDown(){
 		bf.removeDriver();
 	}
 

@@ -5,20 +5,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import js.jScript;
 
 public class RemaxMain extends Base{
-	WebDriver driver;
+	//WebDriver driver;
 	jScript js = new jScript();
 	String expectedTitle = "Venta y Alquiler de Propiedades | RE/MAX";
 
 	///// ELEMENTOS WEB/////
 	@FindBy(xpath = "//button[contains(text(),'Quiero alquilar')]")
 	WebElement btnAlquilar;
-	@FindBy(css = "#searchbar-input")//.input-label
+	@FindBy(css = "#searchbar-input")
 	WebElement buscador;
 	
 	@FindBy(css = "#cdk-overlay-2")
@@ -26,8 +24,6 @@ public class RemaxMain extends Base{
 	
 	@FindBy(xpath = "//*[@id=\"mat-option-10\"]")
 	WebElement opcionCordoba;
-	//selectByVisibleText
-	//#mat-option-422 > span:nth-child(1) > div
 	
 	@FindBy(css = "#property-type")
 	WebElement tipoPropiedad;
@@ -45,7 +41,7 @@ public class RemaxMain extends Base{
 
 	///// CONSTRUCTOR/////
 	public RemaxMain(WebDriver driver) {
-		this.driver = driver;
+		super.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
@@ -64,11 +60,8 @@ public class RemaxMain extends Base{
 	public void opcionCordoba() {
 		String cssCordoba = "#mat-option-19 > span:nth-child(1) > div";
 		WebElement cba = driver.findElement(By.cssSelector(cssCordoba));
+		esperarCss(driver, cssCordoba);
 		js.moveyhightlight(driver, cba);
-		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(cssCordoba)));
-		
 		if(cba.isDisplayed()) {
 			cba.click();
 			}

@@ -1,90 +1,88 @@
-2022-02-08 22:00:29.356 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
-2022-02-08 22:00:45.223 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
-2022-02-08 22:01:02.947 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
-2022-02-08 22:01:15.061 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
-2022-02-08 22:01:19.757 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:56)] - ingresando filtro: monto( U$D5000 U$D30000)
-2022-02-08 22:01:28.537 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:65)] - ingresando los 3 primeros link y recolectando sus datos
-2022-02-08 22:01:36.678 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:99)] - RECOLECTANDO DATOS PARA ARCHIVO .TXT
-2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
+2022-03-02 13:41:54.215 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-03-02 13:42:11.792 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-03-02 13:42:23.929 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-03-02 13:42:32.924 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:88)] - ingresando los 3 primeros link y recolectando sus datos
+2022-03-02 13:42:56.744 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:125)] - recolectando datos de los 3 primeros links para archivo .txt
+2022-03-02 13:42:56.746 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+REMAX VENDE OFICINA CENTRICA
+REMAX VENDE OFICINA 3, EN EDIFICIO GUEMES, UBICADA EN PRIMER PISO, MUY LUMINOSA, EL EDIFICIO CUENTA CON ASCENSOR Y UN BA�O POR PISO, A POCAS CUADRAS DE LA TERMINAL DE OMNIBUS Y A UNA CUADRA DE AV. MAIPU
+16.500 USD
+superficie total: 21 m�
+superficie cubierta: 21 m�
 
+pisos de la propiedad: 5
+apto profesional: S�
+expensas: ARS 7.000
+2022-03-02 13:42:56.747 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+Se vende Oficina Barrio Centro
+Se vende Oficina Barrio Centro
+Esta ubicada sobre Caseros 344 en el 5to piso , entre ca�ada y Belgrano. Lo
+cual hace que sea un punto estrat�gico en el centro de C�rdoba.
 
+Cuenta con :
+- Sala de espera.
+- Oficina.
+- 2 Ba�os en el piso .
 
-expensas: ARS 1.700
-2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
+- Seguridad 24 horas
+15.200 USD
+superficie total: 27 m�
+superficie cubierta: 27 m�
+ba�os: 1
 
+apto profesional: S�
+expensas: ARS 4.000
+2022-03-02 13:42:56.752 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+RREMAX VENDE OFICINA CENTRICA
+REMAX VENDE OFICINA UBICADA EN EDIFICIO GUEMES, 1 PISO, CUENTA CON TODOS LOS SERVICIOS, ASCENSOR, UBICADA A UNA CUADRA DE AV MAIP� , MUY BUENA ILUMINACI�N
+16.500 USD
+superficie total: 21 m�
+superficie cubierta: 21 m�
 
+pisos de la propiedad: 5
+apto profesional: S�
+expensas: ARS 7.000
+2022-03-02 13:43:34.027 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-03-02 13:43:48.329 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-03-02 13:43:57.672 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-03-02 13:44:06.500 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:88)] - ingresando los 3 primeros link y recolectando sus datos
+2022-03-02 13:44:18.929 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:125)] - recolectando datos de los 3 primeros links para archivo .txt
+2022-03-02 13:44:18.931 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+REMAX VENDE OFICINA CENTRICA
+REMAX VENDE OFICINA 3, EN EDIFICIO GUEMES, UBICADA EN PRIMER PISO, MUY LUMINOSA, EL EDIFICIO CUENTA CON ASCENSOR Y UN BA�O POR PISO, A POCAS CUADRAS DE LA TERMINAL DE OMNIBUS Y A UNA CUADRA DE AV. MAIPU
+16.500 USD
+superficie total: 21 m�
+superficie cubierta: 21 m�
 
-expensas: ARS 1.700
-2022-02-08 22:01:36.679 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
-baños: 1
+pisos de la propiedad: 5
+apto profesional: S�
+expensas: ARS 7.000
+2022-03-02 13:44:18.932 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+Se vende Oficina Barrio Centro
+Se vende Oficina Barrio Centro
+Esta ubicada sobre Caseros 344 en el 5to piso , entre ca�ada y Belgrano. Lo
+cual hace que sea un punto estrat�gico en el centro de C�rdoba.
 
+Cuenta con :
+- Sala de espera.
+- Oficina.
+- 2 Ba�os en el piso .
 
-expensas: ARS 1.700
-2022-02-08 22:01:56.546 INFO [main] [com.remaxar.RemaxSearchDataTest.TestBusdquedaPortada(RemaxSearchDataTest.java:38)] - ingresando a remax.com
-2022-02-08 22:02:08.206 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:51)] - ingresando filtro: cambiando alquiler por venta
-2022-02-08 22:02:12.838 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:56)] - ingresando filtro: monto( U$D5000 U$D30000)
-2022-02-08 22:02:22.879 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:65)] - ingresando los 3 primeros link y recolectando sus datos
-2022-02-08 22:02:30.057 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:99)] - RECOLECTANDO DATOS PARA ARCHIVO .TXT
-2022-02-08 22:02:30.058 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
+- Seguridad 24 horas
+15.200 USD
+superficie total: 27 m�
+superficie cubierta: 27 m�
+ba�os: 1
 
+apto profesional: S�
+expensas: ARS 4.000
+2022-03-02 13:44:18.989 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+RREMAX VENDE OFICINA CENTRICA
+REMAX VENDE OFICINA UBICADA EN EDIFICIO GUEMES, 1 PISO, CUENTA CON TODOS LOS SERVICIOS, ASCENSOR, UBICADA A UNA CUADRA DE AV MAIP� , MUY BUENA ILUMINACI�N
+16.500 USD
+superficie total: 21 m�
+superficie cubierta: 21 m�
 
-
-expensas: ARS 1.700
-2022-02-08 22:02:30.058 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
-
-
-
-expensas: ARS 1.700
-2022-02-08 22:02:30.059 INFO [main] [com.remaxar.RemaxSearchDataTest.testInfo(RemaxSearchDataTest.java:102)] - #############################################################################
-Oficina en el Centro de Córdoba
-Remax vende oficina con excelente ubicación en el Centro de Córdoba, en Av Colón 350, frente a Galería Cinerama. 
-Ubicada en pleno Centro, estratégicamente comercial y profesional con ingreso por ascensor , ideal para Estudio contable , jurídico ; atención al público o consultorio. 
-La misma se encuentra en perfectas condiciones y actualmente desocupada. Cuenta con escrituras. 
-Llamános para verla y con gusto coordinamos visita.
-12.500 USD
-superficie total: 22 m²
-superficie cubierta: 22 m²
-baños: 1
-
-
-expensas: ARS 1.700
+pisos de la propiedad: 5
+apto profesional: S�
+expensas: ARS 7.000

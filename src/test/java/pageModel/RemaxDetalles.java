@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import js.jScript;
 
 public class RemaxDetalles extends pageModel.Base{
-	WebDriver driver;
+	//WebDriver driver;
 	jScript js = new jScript();
 	
 	//---DATOS PRINCIPADOS---//
@@ -24,7 +24,7 @@ public class RemaxDetalles extends pageModel.Base{
 	WebElement superficieTotal;
 	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'superficie cubierta')]")
 	WebElement superficieCubierta;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'baños')]")
+	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'ba�os')]")
 	WebElement baños;
 	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'apto profesional')]")
 	WebElement aptoProfesional;
@@ -97,22 +97,5 @@ public class RemaxDetalles extends pageModel.Base{
 		catch(Exception e){
 			return "";}
 	}
-	////Xpath=//label[starts-with(@id,'message')]
-	////*[@id="second-item"]//*[@class="feature-detail"]
-	////*[@id="second-item"]//*[@class="feature-detail"]
-	////*[@id="second-item"]//following::span[3]
-	/*
-	 * String searchText = "your element's text";
-        WebElement dropdown = driver(or your parent locator of ul).findElement(By.tagName("ul"));
-        List<WebElement> options = dropdown.findElements(By.tagName("li"));
-        System.out.println(options);
-        for (WebElement option : options)
-        {
-            if (option.getText().equals(searchText))
-            {
-                option.click(); // click the desired option
-
-            }
-        } */
 	 
 }
