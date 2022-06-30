@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="CHROME(failed)">
+  <test thread-count="1" parallel="tests" name="FIREFOX(failed)">
     <parameter name="browser" value="FIREFOX"/>
     <parameter name="nodeUrl" value="http://localhost:4444/wd/hub"/>
     <classes>
@@ -13,5 +13,5 @@
         </methods>
       </class> <!-- com.remaxar.RemaxSearchDataTest -->
     </classes>
-  </test> <!-- CHROME(failed) -->
+  </test> <!-- FIREFOX(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

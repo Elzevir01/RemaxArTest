@@ -1,43 +1,34 @@
 package pageModel;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
-import js.jScript;
 
 public class RemaxMain extends Base{
-	//WebDriver driver;
-	jScript js = new jScript();
+
 	String expectedTitle = "Venta y Alquiler de Propiedades | RE/MAX";
 
 	///// ELEMENTOS WEB/////
-	@FindBy(xpath = "//button[contains(text(),'Quiero alquilar')]")
-	WebElement btnAlquilar;
-	@FindBy(css = "#searchbar-input")
-	WebElement buscador;
+	private By btnAlquilar = By.xpath("//button[contains(text(),'Quiero alquilar')]");
+	private By buscador = By.cssSelector("#searchbar-input");
+	/////-- lista donde ¿quieres mudarte? --/////
+	private By lista = By.cssSelector("#cdk-overlay-2");
+	/////-- seleccion especifica de "Córdoba" en el buscador --/////
+	private By opcionCordoba = By.xpath("//div[text()= 'Córdoba']");
+
+	/////-- lista Tipo de propiedad --/////
+	private By tipoPropiedad = By.xpath("//span[contains(text(), 'Tipo de propiedad')]");
+	private By tipoOficina = By.xpath("//span[contains(text(),'Oficina')]");
+	private By tipoConsultorio = By.xpath("//span[contains(text(),'Consultorio')]");
 	
-	@FindBy(css = "#cdk-overlay-2")
-	WebElement lista;
-	
-	@FindBy(xpath = "//*[@id=\"mat-option-10\"]")
-	WebElement opcionCordoba;
-	
-	@FindBy(css = "#property-type")
-	WebElement tipoPropiedad;
-	@FindBy(xpath = "//span[contains(text(),'Oficina')]")
-	WebElement tipoOficina;
-	@FindBy(xpath = "//span[contains(text(),'Consultorio')]")
-	WebElement tipoConsultorio;
-	
-	@FindBy(css = ".cdk-overlay-backdrop")
-	WebElement cerrarMenuTIpo;
-	//.cdk-overlay-backdrop
-	
-	@FindBy(css = "#button-search")
-	WebElement btnBuscar;
+	private By cerrarMenuTipo = By.xpath("//div[@class='cdk-overlay-connected-position-bounding-box']");
+	private By cerrarMenu = By.xpath("/html/body/div[3]/div[1]");
+	private By btnBuscar = By.xpath("//button[@id='button-search']");
 
 	///// CONSTRUCTOR/////
 	public RemaxMain(WebDriver driver) {
@@ -51,27 +42,44 @@ public class RemaxMain extends Base{
 	
 	//////METODOS /////
 	public void alquilar() {
-		clickElement(driver, btnAlquilar);
+		findElemento(btnAlquilar).click();
 	}
-	public void textCordoba() throws InterruptedException {
-		sendKey(driver, buscador, "cordoba");
-		Thread.sleep(3000);
+	public void textCordoba(){
+		sendKey(buscador, "cordoba");
 	}
 	public void opcionCordoba() {
-		String cssCordoba = "#mat-option-19 > span:nth-child(1) > div";
-		WebElement cba = driver.findElement(By.cssSelector(cssCordoba));
-		esperarCss(driver, cssCordoba);
-		js.moveyhightlight(driver, cba);
-		if(cba.isDisplayed()) {
-			cba.click();
+		
+		esperarElemento(opcionCordoba);
+		
+		if(checkElement(opcionCordoba)) {
+			findElemento(opcionCordoba).click();
 			}
 	}
-	public void propiedad() throws InterruptedException {
-		clickElement(driver, tipoPropiedad);
-		Thread.sleep(1000);
-		clickElement(driver, tipoOficina);
-		clickElement(driver, tipoConsultorio);
-		clickElement(driver, cerrarMenuTIpo);
-		clickElement(driver, btnBuscar);
+	public void propiedad(){
+		findElemento(tipoPropiedad).click();
+		//////
+		esperarElemento(tipoOficina);
+		findElemento(tipoOficina).click();
+		findElemento(tipoConsultorio).click();
+		//findElemento(cerrarMenuTipo).click();
+		/*while(checkElement(btnBuscar)==false) {
+			clickCo(cerrarMenu);
+		}*/
+		//derechaDe(cerrarMenuTipo);
+		//findElemento(cerrarMenu).click();
+		clickCo(btnBuscar);
+		esperarElemento(btnBuscar);
+		findElemento(btnBuscar).click();
 	}
+	public void pressESC() {
+		try {
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+		robot.keyPress(KeyEvent.VK_ESCAPE);
+		}catch(Exception e) {
+			
+		}
+	}
+	
+	
 }

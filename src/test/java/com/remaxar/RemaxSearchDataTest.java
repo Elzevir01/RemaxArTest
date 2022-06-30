@@ -50,7 +50,7 @@ public class RemaxSearchDataTest {
 		rm = new RemaxMain(driver);
 		url = "https://www.remax.com.ar/";
 		Log.info("ingresando a remax.com");
-		rm.navegar(driver, url);
+		rm.navegar(url);
 		rm.alquilar();
 		rm.textCordoba();
 		rm.opcionCordoba();

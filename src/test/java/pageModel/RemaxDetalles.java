@@ -1,5 +1,6 @@
 package pageModel;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,29 +10,20 @@ import js.jScript;
 
 public class RemaxDetalles extends pageModel.Base{
 	//WebDriver driver;
-	jScript js = new jScript();
 	
+	private By ilimitado = By.xpath("//li[text()='Ilimitado']");
 	//---DATOS PRINCIPADOS---//
-	@FindBy(css = "#title-multimedia > div:nth-child(1) > h1")
-	WebElement titulo;
-	@FindBy(css = "#price-container > h3")
-	WebElement precioDolar;
-	@FindBy(xpath = "//*[@id='first-item']//*[@id='last']")
-	WebElement descripcion;
+	private By titulo = By.cssSelector("#title-multimedia > div:nth-child(1) > h1");
+	private By precioDolar = By.cssSelector("#price-container > h3");
+	private By descripcion = By.xpath("//*[@id='first-item']//*[@id='last']");
 	
 	//---DATOS EXTRAS---//
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'superficie total')]")
-	WebElement superficieTotal;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'superficie cubierta')]")
-	WebElement superficieCubierta;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'ba�os')]")
-	WebElement baños;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'apto profesional')]")
-	WebElement aptoProfesional;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'expensas')]")
-	WebElement expensas;
-	@FindBy(xpath = "//*[@id='second-item']//span[contains(text(),'pisos')]")
-	WebElement pisosPropiedad;
+	private By superficieTotal = By.xpath("//*[@id='second-item']//span[contains(text(),'superficie total')]");
+	private By superficieCubierta = By.xpath("//*[@id='second-item']//span[contains(text(),'superficie cubierta')]");
+	private By baños = By.xpath("//*[@id='second-item']//span[contains(text(),'ba�os')]");
+	private By aptoProfesional = By.xpath("//*[@id='second-item']//span[contains(text(),'apto profesional')]");
+	private By expensas = By.xpath("//*[@id='second-item']//span[contains(text(),'expensas')]");
+	private By pisosPropiedad = By.xpath("//*[@id='second-item']//span[contains(text(),'pisos')]");
 	
 	///// CONSTRUCTOR/////
 	public RemaxDetalles(WebDriver driver) {

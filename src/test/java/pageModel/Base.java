@@ -1,5 +1,7 @@
 package pageModel;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,12 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
-import js.jScript;
 
 public class Base {
 	WebDriver driver;
-	jScript js = new jScript();
 	String expectedTitle = "";
 
 	///// CONSTRUCTOR/////
@@ -25,69 +26,55 @@ public class Base {
 	}
 
 	//// METODOS/////
-	public void clickElement(WebDriver driver, WebElement elemento) {
-		elemento.click();
+	public WebElement findElemento(By elemento) {
+		return driver.findElement(elemento);
 	}
-
-	public void clickElementFocus(WebDriver driver, WebElement elemento) {
-		js.moveyhightlight(driver, elemento);
-		elemento.click();
-		js.waitForPageToLoad(driver);
+	public void sendKey(By elemento, String texto) {
+		findElemento(elemento).sendKeys(texto);
 	}
-
-	public void sendKey(WebDriver driver, WebElement elemento, String texto) {
-		js.highLight(driver, elemento);
-		elemento.sendKeys(texto);
+	public void cursorTo(By elemento) {
+		new Actions(driver).moveToElement(findElemento(elemento)).perform();
 	}
-
-	public void cursorTo(WebDriver driver, WebElement elemento) {
-		js.highLight(driver, elemento);
-		new Actions(driver).moveToElement(elemento).perform();
+	public void navegar(String url) {
+		driver.get(url);
 	}
-
-	public boolean checkElement(WebElement elemento) {
+	public String titulo() {
+		return driver.getTitle();
+	}
+	public void esperarElemento(By elemento) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(elemento));	
+	}
+	public void esperarWeb() {
+	}
+	public void confirmarTitulo(String titulo) {
+		ExpectedConditions.titleIs(titulo);
+	}
+	public boolean checkElement(By elemento) {
+		WebElement we = findElemento(elemento);
 		try {
-			if (elemento.isDisplayed()) {
-				System.out.println("Elemento: [ " + elemento.getText() + " ] Existe");
+			if (we.isDisplayed()) {
+				System.out.println("Elemento: [ " + we.getText() + " ] Existe");
 			}
 			return true;
 		} catch (org.openqa.selenium.NoSuchElementException e) {
-			System.out.println("Elemento: [ " + elemento.getText() + " ]X NO Existe");
+			System.out.println("Elemento: [ " + we.getText() + " ]X NO Existe");
 			return false;
 		}
 	}
-
-	public void navegar(WebDriver driver, String url) {
-		driver.get(url);
-		js.waitForPageToLoad(driver);
-	}
-
-	public String titulo(WebDriver driver) {
-		return driver.getTitle();
-	}
-
-	public String getText(WebElement elemento) {
+	public String getText(By elemento) {
+		
 		if (checkElement(elemento))
-			return elemento.getText();
+			return findElemento(elemento).getText();
 		else
 			return "";
 	}
-	public void clearText(WebElement elemento) {
-		elemento.clear();
+	public void derechaDe(By elemento) {
+		driver.findElement(with(By.xpath("/html/body/div[3]")).toRightOf(elemento)).click();
 	}
-	public void esperarXpath(WebDriver driver, String elemento) {
-		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(elemento)));
-		
+	public void clickCo(By elemento) {
+		Actions builder = new Actions(driver);   
+		builder.moveToElement(findElemento(elemento), 25, 25).click().build().perform();
 	}
-	public void esperarCss(WebDriver driver, String elemento) {
-		@SuppressWarnings("deprecation")
-		WebDriverWait wait = new WebDriverWait(driver, 15);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(elemento)));
-		
-	}
-	public void esperarWeb() {
-		js.waitForPageToLoad(driver);
-	}
+	
 }

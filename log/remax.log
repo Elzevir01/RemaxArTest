@@ -86,3 +86,450 @@ superficie cubierta: 21 m�
 pisos de la propiedad: 5
 apto profesional: S�
 expensas: ARS 7.000
+2022-06-27 20:47:56.081 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-27 20:48:04.011 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-27 20:48:19.714 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : null
+2022-06-27 20:48:19.715 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+2022-06-27 20:48:19.724 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-27 20:48:19.736 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-27 20:48:56.348 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-27 20:49:07.331 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-27 21:26:37.995 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+2022-06-27 21:26:38.018 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2022-06-27 21:26:38.199 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-27 21:26:38.387 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 22:09:25.552 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.io.UncheckedIOException: org.asynchttpclient.exception.RemotelyClosedException: Remotely closed
+2022-06-28 22:09:25.592 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 102, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 102, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}}]
+Capabilities {}
+2022-06-28 22:09:25.980 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 22:09:26.105 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 22:24:29.276 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.io.UncheckedIOException: org.asynchttpclient.exception.RemotelyClosedException: Remotely closed
+2022-06-28 22:24:29.294 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}}]
+Capabilities {}
+2022-06-28 22:24:29.582 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 22:24:30.011 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 22:33:29.569 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+2022-06-28 22:33:29.608 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2022-06-28 22:33:29.703 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 22:33:29.823 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:01:09.192 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+2022-06-28 23:01:09.244 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2022-06-28 23:01:09.605 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:01:09.728 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:07:27.469 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.lang.RuntimeException: NettyHttpHandler request execution error
+2022-06-28 23:07:27.474 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: Chrome, browserVersion: latest, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}], desiredCapabilities=Capabilities {browserName: Chrome, browserVersion: latest, build: Chrome Selenium 4, goog:chromeOptions: {args: [], extensions: []}, name: Chrome Selenium 4, platformName: LINUX}}]
+Capabilities {}
+2022-06-28 23:07:27.545 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:07:27.604 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:09:21.132 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+2022-06-28 23:09:21.481 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2022-06-28 23:09:21.556 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:09:21.612 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:23:55.031 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.lang.RuntimeException: NettyHttpHandler request execution error
+2022-06-28 23:23:55.058 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 103, cloud:options: {build: myTestBuild, name: myTestName}, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 103, cloud:options: {build: myTestBuild, name: myTestName}, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}}]
+Capabilities {}
+2022-06-28 23:23:55.274 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:23:55.338 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:33:52.663 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.lang.RuntimeException: NettyHttpHandler request execution error
+2022-06-28 23:33:52.670 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 103, cloud:options: {build: myTestBuild, name: myTestName}, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 103, cloud:options: {build: myTestBuild, name: myTestName}, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}}]
+Capabilities {}
+2022-06-28 23:33:52.758 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:33:53.026 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-28 23:39:00.717 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+2022-06-28 23:39:00.719 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2022-06-28 23:39:00.787 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-28 23:39:00.879 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 11:59:26.436 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.io.UncheckedIOException: java.io.IOException: Stream closed
+2022-06-29 11:59:26.459 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: linux}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: Linux}}]
+Capabilities {}
+2022-06-29 11:59:26.628 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 11:59:26.765 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 12:14:51.496 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:140)] - Causa : java.io.UncheckedIOException: java.io.IOException: Stream closed
+2022-06-29 12:14:51.503 ERROR [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.SetUp(RemaxSearchDataTest.java:141)] - Mensaje : Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'elzevir-N56VB', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-121-generic', java.version: '17.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: linux}], desiredCapabilities=Capabilities {browserName: chrome, browserVersion: 103, goog:chromeOptions: {args: [], extensions: []}, platformName: LINUX}}]
+Capabilities {}
+2022-06-29 12:14:51.613 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 12:14:51.803 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 12:40:50.475 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 12:40:59.288 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 12:41:08.432 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 13:01:26.457 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 13:01:35.856 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 13:02:20.831 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 13:02:27.275 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 13:03:06.503 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 13:03:14.955 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 14:02:05.109 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 14:02:13.263 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 14:02:38.258 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 14:02:46.047 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 14:03:13.753 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 14:03:23.565 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 16:10:46.919 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 16:10:59.396 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 16:13:25.122 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 16:13:32.070 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 16:35:55.667 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 16:36:07.545 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 18:20:38.140 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 18:20:54.773 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 18:23:01.917 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 18:23:07.376 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:10:35.452 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:10:44.916 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:29:01.272 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:29:06.953 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:34:36.368 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:34:44.933 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:37:43.693 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:37:51.350 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:38:45.331 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:38:53.260 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:41:11.590 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:41:18.531 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:41:32.206 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 21:41:48.584 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:41:54.958 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:42:04.231 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 21:44:48.448 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 21:44:56.829 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 21:45:06.135 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 21:45:12.581 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:88)] - ingresando los 3 primeros link y recolectando sus datos
+2022-06-29 21:45:25.490 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:125)] - recolectando datos de los 3 primeros links para archivo .txt
+2022-06-29 21:45:25.493 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+VENTA LOTE 500 METROS COLONIA TIROLESA CORDOBA
+Se vende lote en Campos de lujan, Colonia Tirolesa.
+
+Ubicación estratégica frente a la ruta provincial A74, con acceso seguro, sencillo y rápido. 
+El Loteo ya cuenta con el apto constructivo.
+
+Se ofrece lote 21 y 22 de la manzana 1, consecutivos
+Cada uno de 504 mts2
+
+Lotes a 90°, pendiente positiva.
+
+Sin expensas. 
+Iluminaria LED. 
+
+Comprá tu lote en Campos de Lujan y comenzá tu obra de inmediato.
+15.000 USD
+
+
+
+
+
+
+2022-06-29 21:45:25.494 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+SE VENDE LOTE ESQUINA EN BIALET MASSE- PUNILLA
+RE/MAX VENDE LOTE ESQUINA EN BIALET MASSE- DEPARTAMENTO PUNILLA
+
+*POSEE ESCRITURA 
+*POSESION INMEDIATA
+
+DIMENSIONES
+*756 M2
+
+UBICACION
+
+*CALLE COPACABANA Y ACAPULCO MZ 470 LOTE 16
+*A 30 MINUTOS DE CORDOBA
+*A 10 MINUTOS DE CARLOS PAZ
+*A 10 MINUTOS DE COSQUIN
+*A 5 MINUTOS DE PARQUE SIQUIMAN
+*BUEN ENTORNO
+*HERMOSA VISTA DE LAS SIERRAS CHICAS
+*A 5 CUADRAS DEL RIO MALLIN
+*PRONTO PASO DE LA AUTOVIA
+*A 5 CUADRAS DE CALLE CASSAFFOUSTH
+
+EXCELENTE OPORTUNIDAD PARA CABAÑAS
+LLAMAME Y VAMOS A VERLO!!!
+6.990 USD
+
+
+
+
+
+
+2022-06-29 21:45:25.495 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+VALLE CERCANO TERRENO EN VENTA 341MTS. APTO DUPLEX
+TERRENO 341M2. APTO DUPLEX - LA AMISTAD - VALLE CERCANO
+
+Se vende hermoso terreno de 341m2. Apto Dúplex, con ESCRITURA. 
+
+Ubicación inmejorable en el Barrio "LA AMISTAD" L 1 MZA 142, de la ya consolidada Urbanización Deportiva VALLE CERCANO.
+
+Emplazado en zona sur de la ciudad de Córdoba, muy cerca de todo lo que necesitas, es una de las propuestas más innovadoras del sector.
+
+CARACTERÍSTICAS GENERALES:
+* Terreno 341m2
+* Apto Dúplex.
+* Orientación este.
+
+CARACTERÍSTICAS URBANIZACIÓN:
+* 150.000 metros cuadrados de espacios verdes.
+* Parque central de 5 hectáreas.
+* Juegos para chicos.
+* Salón de Usos Múltiples.
+* Circuito aeróbico.
+* Predio deportivo con 4 canchas de rugby, quinchos, vestuarios y estacionamiento.
+Características únicas en lo que respecta a la oferta de terrenos en venta en Córdoba Capital.
+
+Te gustó? Te invitamos a conocerlo!!
+19.900 USD
+
+
+
+
+apto profesional: Sí
+expensas: ARS 2.500
+2022-06-29 22:04:29.722 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 22:04:36.806 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 22:04:45.920 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 22:04:49.567 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:88)] - ingresando los 3 primeros link y recolectando sus datos
+2022-06-29 22:05:03.717 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:125)] - recolectando datos de los 3 primeros links para archivo .txt
+2022-06-29 22:05:03.719 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+OFICINA EN VENTA CENTRO CORDOBA CAPITAL
+REMAX OFRECE 
+
+
+Excelente oficina en piso 1.
+
+Con una de las mejores ubicaciones posibles.
+Propiedad actualmente con renta.
+Expensas Bajas 
+
+
+Muy buena iluminación y ventilación
+
+
+Ascensor
+Seguridad 
+
+Llámame y vamos a conocer tu próxima oficina!!!!!
+19.000 USD
+superficie total: 20 m²
+superficie cubierta: 17 m²
+
+
+apto profesional: Sí
+expensas: ARS 2.500
+2022-06-29 22:05:03.720 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+SE VENDE OFICINA - 2 PRIVADOS FRENTE TRIBUNALES 1
+OPORTUNIDAD, OFICINA TOTALMENTE REFACCIONADA FRENTE A TRIBUNAL PROVINCIAL 1, SOBRE DUARTE QUIROS A METROS DE LA CAÑADA.
+
+IDEAL ABOGADOS, CONTADORES Y PROFESIONALES. 
+
+SE ESCUCHAN OFERTAS DE CONTADO Y SE RECIBE VEHÍCULOS. 
+SE PUEDE REALIZAR ENTREGA Y UNA FINANCIACIÓN. 
+
+Características: 
+-OFICINA DE 30 METROS CUADRADOS
+-1 Baño 
+DOS PRIVADOS MUY AMPLIOS Y LUMINOSOS
+DETALLES TÉCNICOS.
+
+INGRESO INDEPENDIENTE POR AVENIDA DUARTE QUIROS.
+
+DOCUMENTACIÓN:
+Escritura. 
+
+¡¡¡La Propiedad es de excelente calidad constructiva en un muy buen estado de conservación!!!
+
+Ubicación:
+Ubicación excelente
+A 50 METROS DE LA CAÑADA
+FRENTE A TRIBUNALES
+Fácil acceso tanto a zona sur como a zona norte de la ciudad. 
+ 
+Si pensás en una buena Inversión esta es tu oportunidad!!!!
+
+LLamanos y la Visitamos!!
+
+Todas las propiedades que figuran en mi perfil se encuentran a cargo del profesional matriculado de la oficina, la intermediación y la conclusión de las operaciones serán llevadas exclusivamente por él.
+26.500 USD
+superficie total: 30 m²
+superficie cubierta: 30 m²
+
+pisos de la propiedad: 7
+apto profesional: Sí
+expensas: USD 3.900
+2022-06-29 22:05:03.721 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+VENTA OFICINA CENTRO CORDOBA
+VENTA OFICINA CENTRO CORDOBA 
+
+REMAX ofrece oficina en pleno centro de Cordoba, calle 9 de Julio 53, pasaje central, 3 piso, oficina 13.
+Un punto estratégico para realizar una excelente inversión.
+
+La misma se encuentra en muy buen estado de conservación. Está subdividida en 2 ambientes.
+
+20.000 USD
+
+Descripción:
+
+-Superficie total: 23 m2
+-Apto profesional: puede ser destinada a distintos tipos de rubros (estudio jurídico, estética, etc.)
+-Totalmente amoblada (escritorio, sillón, muebles, estantes, placar)
+-Baño privado
+-Servicios: luz, agua
+-Escritura
+-Impuestos al día
+-Expensas $2.000 (Junio/2022)
+
+Te vas a perder esta oportunidad ? 
+
+CONTACTATE CON NOSOTROS Y COORDINAMOS TU VISITA!!
+20.000 USD
+superficie total: 23 m²
+superficie cubierta: 23 m²
+
+
+apto profesional: Sí
+expensas: ARS 2.000
+2022-06-29 22:05:50.759 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 22:06:05.247 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
+2022-06-29 22:06:17.273 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:78)] - ingresando filtro: monto( U$D5000 U$D30000)
+2022-06-29 22:06:23.058 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:88)] - ingresando los 3 primeros link y recolectando sus datos
+2022-06-29 22:06:43.980 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:125)] - recolectando datos de los 3 primeros links para archivo .txt
+2022-06-29 22:06:43.981 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+OFICINA EN VENTA CENTRO CORDOBA CAPITAL
+REMAX OFRECE 
+
+
+Excelente oficina en piso 1.
+
+Con una de las mejores ubicaciones posibles.
+Propiedad actualmente con renta.
+Expensas Bajas 
+
+
+Muy buena iluminación y ventilación
+
+
+Ascensor
+Seguridad 
+
+Llámame y vamos a conocer tu próxima oficina!!!!!
+19.000 USD
+superficie total: 20 m²
+superficie cubierta: 17 m²
+
+
+apto profesional: Sí
+expensas: ARS 2.500
+2022-06-29 22:06:43.981 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+SE VENDE OFICINA - 2 PRIVADOS FRENTE TRIBUNALES 1
+OPORTUNIDAD, OFICINA TOTALMENTE REFACCIONADA FRENTE A TRIBUNAL PROVINCIAL 1, SOBRE DUARTE QUIROS A METROS DE LA CAÑADA.
+
+IDEAL ABOGADOS, CONTADORES Y PROFESIONALES. 
+
+SE ESCUCHAN OFERTAS DE CONTADO Y SE RECIBE VEHÍCULOS. 
+SE PUEDE REALIZAR ENTREGA Y UNA FINANCIACIÓN. 
+
+Características: 
+-OFICINA DE 30 METROS CUADRADOS
+-1 Baño 
+DOS PRIVADOS MUY AMPLIOS Y LUMINOSOS
+DETALLES TÉCNICOS.
+
+INGRESO INDEPENDIENTE POR AVENIDA DUARTE QUIROS.
+
+DOCUMENTACIÓN:
+Escritura. 
+
+¡¡¡La Propiedad es de excelente calidad constructiva en un muy buen estado de conservación!!!
+
+Ubicación:
+Ubicación excelente
+A 50 METROS DE LA CAÑADA
+FRENTE A TRIBUNALES
+Fácil acceso tanto a zona sur como a zona norte de la ciudad. 
+ 
+Si pensás en una buena Inversión esta es tu oportunidad!!!!
+
+LLamanos y la Visitamos!!
+
+Todas las propiedades que figuran en mi perfil se encuentran a cargo del profesional matriculado de la oficina, la intermediación y la conclusión de las operaciones serán llevadas exclusivamente por él.
+26.500 USD
+superficie total: 30 m²
+superficie cubierta: 30 m²
+
+pisos de la propiedad: 7
+apto profesional: Sí
+expensas: USD 3.900
+2022-06-29 22:06:43.982 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:128)] - #############################################################################
+VENTA OFICINA CENTRO CORDOBA
+VENTA OFICINA CENTRO CORDOBA 
+
+REMAX ofrece oficina en pleno centro de Cordoba, calle 9 de Julio 53, pasaje central, 3 piso, oficina 13.
+Un punto estratégico para realizar una excelente inversión.
+
+La misma se encuentra en muy buen estado de conservación. Está subdividida en 2 ambientes.
+
+20.000 USD
+
+Descripción:
+
+-Superficie total: 23 m2
+-Apto profesional: puede ser destinada a distintos tipos de rubros (estudio jurídico, estética, etc.)
+-Totalmente amoblada (escritorio, sillón, muebles, estantes, placar)
+-Baño privado
+-Servicios: luz, agua
+-Escritura
+-Impuestos al día
+-Expensas $2.000 (Junio/2022)
+
+Te vas a perder esta oportunidad ? 
+
+CONTACTATE CON NOSOTROS Y COORDINAMOS TU VISITA!!
+20.000 USD
+superficie total: 23 m²
+superficie cubierta: 23 m²
+
+
+apto profesional: Sí
+expensas: ARS 2.000
+2022-06-29 22:07:37.760 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.Test_1_BusdquedaPortada(RemaxSearchDataTest.java:52)] - ingresando a remax.com
+2022-06-29 22:07:53.843 INFO [TestNG-tests-1] [com.remaxar.RemaxSearchDataTest.test_2_FiltrosRecoleccion(RemaxSearchDataTest.java:71)] - ingresando filtro: cambiando alquiler por venta
