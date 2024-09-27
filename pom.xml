@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.remax</groupId>
 	<artifactId>RemaxAr</artifactId>
@@ -10,7 +8,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.10.1</version>
+				<version>3.13.0</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -19,7 +17,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>3.5.0</version>
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>grid.xml</suiteXmlFile><!-- SuiteXmlFile -->
@@ -33,7 +31,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.1.2</version>
+			<version>4.24.0</version>
 		</dependency>
 		<!-- WebDriver MANAGER -->
 		<dependency>
@@ -45,62 +43,62 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-chrome-driver</artifactId>
-			<version>4.1.2</version>
+			<version>4.24.0</version>
 		</dependency>
 		<!-- GECKO DRIVER / FIREFOX -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-firefox-driver</artifactId>
-			<version>4.1.2</version>
+			<version>4.24.0</version>
 		</dependency>
 		<!--  EDGE DRIVER  -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-edge-driver</artifactId>
-			<version>4.1.2</version>
+			<version>4.24.0</version>
 		</dependency>
 		<!-- TEST-NG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.4.0</version>
+			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- ALLURE TEST-NG -->
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
-			<version>2.17.2</version>
+			<version>2.29.0</version>
 		</dependency>
 		<!-- LOG4J -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-core</artifactId>
-			<version>2.17.1</version>
+			<version>2.24.0</version>
 		</dependency>
 		<!-- LOG4J API -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
-			<version>2.17.1</version>
+			<version>2.24.0</version>
 		</dependency>
 		<!-- Log4j-slf4j -->
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-slf4j-impl</artifactId>
-			<version>2.15.0</version>
+			<version>2.24.0</version>
 		</dependency>
 		<!-- SLF4J API Module -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>2.0.0-alpha6</version>
+			<version>2.0.16</version>
 		</dependency>
 		<!-- SLF4J LOG4J 12 Binding -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>2.0.0-alpha6</version>
+			<version>2.0.16</version>
 			<scope>test</scope>
 		</dependency>
 
