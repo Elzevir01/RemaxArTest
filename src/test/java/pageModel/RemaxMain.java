@@ -15,7 +15,7 @@ public class RemaxMain extends Base{
 
 	///// ELEMENTOS WEB/////
 	private By btnAlquilar = By.xpath("//button[contains(text(),'Quiero alquilar')]");
-	private By buscador = By.xpath("//div[@class='searcher searcher--home-searcher']");
+	private By buscador = By.xpath("//div//input");//div[@class='searcher searcher--home-searcher']");
 	
 	/////-- seleccion especifica de "Córdoba" en el buscador --/////
 	private By opcionCordoba = By.xpath("//div[text()= 'Córdoba']");
