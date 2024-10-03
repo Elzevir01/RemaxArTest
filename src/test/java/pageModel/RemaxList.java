@@ -7,22 +7,22 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class RemaxList extends Base {
+	int numero =0;
 	///// MENU /////
 	private By tipoOperacion = By.cssSelector("#select-operation");
 	private By tipoCompra = By.xpath("//button[contains(text(),'Comprar')]");
 	private By aplicarTipo = By.xpath("//button[contains(text(),'Aplicar filtro')]");
-
 	///// MENU PRECIO/////
 	private By btnPrecio = By.cssSelector("#select-price");
-	private By precioDesde = By.xpath("//*[@id=\"mat-input-0\"]");
-	private By precioHasta = By.xpath("//*[@id=\"mat-input-1\"]");
+	private By precioDesde = By.xpath("//*[@id='from']");
+	private By precioHasta = By.xpath("//*[@id='to']");
 	private By aplicarPrecio = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 
 	///// CARD LINK/////
 	private By cardLink1 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(1)");
 	private By cardLink2 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(2)");
 	private By cardLink3 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(3)");
-
+	private By cardLinkList = By.xpath("//div[@class='card-remax viewList']");
 	///// CONSTRUCTOR/////
 	public RemaxList(WebDriver driver) {
 		super.driver = driver;
@@ -30,8 +30,8 @@ public class RemaxList extends Base {
 	}
 	
 	public void alquilerAVenta() throws InterruptedException {
-		esperarElemento(tipoOperacion);
 		findElemento(tipoOperacion).click();
+		esperarElemento(tipoCompra);
 		findElemento(tipoCompra).click();
 		findElemento(aplicarTipo).click();
 		Thread.sleep(3000);
@@ -50,15 +50,18 @@ public class RemaxList extends Base {
 	}
 
 	public void card1() {
-		findElemento(cardLink1).click();
+		numero = 0;
+		listaNumero(cardLinkList,0).click();
 	}
 
 	public void card2() {
-		findElemento(cardLink2).click();
+		numero = 1;
+		listaNumero(cardLinkList,1).click();
 	}
 
 	public void card3() {
-		findElemento(cardLink3).click();
+		numero = 2;
+		listaNumero(cardLinkList,2).click();
 	}
 	
 	public int cardCount() {

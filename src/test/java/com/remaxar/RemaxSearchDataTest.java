@@ -55,6 +55,7 @@ public class RemaxSearchDataTest {
 		rm.textCordoba();
 		rm.opcionCordoba();
 		rm.propiedad();
+		rm.buscar();
 
 	}
 	@Severity(SeverityLevel.BLOCKER)

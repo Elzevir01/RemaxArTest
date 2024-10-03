@@ -1,6 +1,7 @@
 package pageModel;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -29,6 +30,12 @@ public class Base {
 	public WebElement findElemento(By elemento) {
 		return driver.findElement(elemento);
 	}
+	public WebElement listaNumero(By elemento, int numero) {
+        List<WebElement> lista = driver.findElements(elemento);
+        WebElement elementoNumero = lista.get(numero);
+		return elementoNumero;
+	}
+	
 	public void sendKey(By elemento, String texto) {
 		findElemento(elemento).sendKeys(texto);
 	}

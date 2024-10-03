@@ -15,19 +15,18 @@ public class RemaxMain extends Base{
 
 	///// ELEMENTOS WEB/////
 	private By btnAlquilar = By.xpath("//button[contains(text(),'Quiero alquilar')]");
-	private By buscador = By.cssSelector("#searchbar-input");
-	/////-- lista donde ¿quieres mudarte? --/////
-	private By lista = By.cssSelector("#cdk-overlay-2");
+	private By buscador = By.xpath("//div[@class='searcher searcher--home-searcher']");
+	
 	/////-- seleccion especifica de "Córdoba" en el buscador --/////
 	private By opcionCordoba = By.xpath("//div[text()= 'Córdoba']");
 
 	/////-- lista Tipo de propiedad --/////
-	private By tipoPropiedad = By.xpath("//span[contains(text(), 'Tipo de propiedad')]");
+	private By tipoPropiedad = By.xpath("//span[contains(text(), 'Tipo de propiedad')]");////*[@id=\\\"property-type\\\"]
 	private By tipoOficina = By.xpath("//span[contains(text(),'Oficina')]");
 	private By tipoConsultorio = By.xpath("//span[contains(text(),'Consultorio')]");
-	
 	private By cerrarMenuTipo = By.xpath("//div[@class='cdk-overlay-connected-position-bounding-box']");
-	private By cerrarMenu = By.xpath("/html/body/div[3]/div[1]");
+	
+	/////-- iniciar la busqueda --/////
 	private By btnBuscar = By.xpath("//button[@id='button-search']");
 
 	///// CONSTRUCTOR/////
@@ -61,15 +60,12 @@ public class RemaxMain extends Base{
 		esperarElemento(tipoOficina);
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
-		//findElemento(cerrarMenuTipo).click();
-		/*while(checkElement(btnBuscar)==false) {
-			clickCo(cerrarMenu);
-		}*/
-		//derechaDe(cerrarMenuTipo);
-		//findElemento(cerrarMenu).click();
-		clickCo(btnBuscar);
+		findElemento(cerrarMenuTipo).click();
+		//clickCo(btnBuscar);
+	}
+	public void buscar() {
 		esperarElemento(btnBuscar);
-		findElemento(btnBuscar).click();
+		findElemento(btnBuscar).click();;
 	}
 	public void pressESC() {
 		try {
