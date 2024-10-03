@@ -64,11 +64,12 @@ public class RemaxMain extends Base{
 		findElemento(cerrarMenuTipo).click();
 		pressESC();
 		findElemento(tipoPropiedad).click();
-		//clickCo(btnBuscar);
+		clickCo(btnBuscar);
+		//findElemento(btnBuscar).click();
 	}
 	public void buscar() {
 		esperarElemento(btnBuscar);
-		findElemento(btnBuscar).click();;
+		findElemento(btnBuscar).click();
 	}
 	public void pressESC() {
 		try {
