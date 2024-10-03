@@ -24,7 +24,7 @@ public class RemaxMain extends Base{
 	private By tipoPropiedad = By.xpath("//span[contains(text(), 'Tipo de propiedad')]");////*[@id=\\\"property-type\\\"]
 	private By tipoOficina = By.xpath("//span[contains(text(),'Oficina')]");
 	private By tipoConsultorio = By.xpath("//span[contains(text(),'Consultorio')]");
-	private By cerrarMenuTipo = By.xpath("//div[@class='cdk-overlay-connected-position-bounding-box']");
+	private By cerrarMenuTipo = By.xpath("//div[@class='cdk-overlay-container']");
 	
 	/////-- iniciar la busqueda --/////
 	private By btnBuscar = By.xpath("//button[@id='button-search']");
@@ -54,12 +54,13 @@ public class RemaxMain extends Base{
 			findElemento(opcionCordoba).click();
 			}
 	}
-	public void propiedad(){
+	public void propiedad() throws InterruptedException{
 		findElemento(tipoPropiedad).click();
 		//////
 		esperarElemento(tipoOficina);
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
+		Thread.sleep(2000);
 		findElemento(cerrarMenuTipo).click();
 		pressESC();
 		//clickCo(btnBuscar);
