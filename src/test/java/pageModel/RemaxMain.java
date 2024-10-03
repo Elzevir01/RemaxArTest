@@ -65,7 +65,7 @@ public class RemaxMain extends Base{
 		pressESC();
 		findElemento(tipoPropiedad).click();
 		clickCo(btnBuscar);
-		//findElemento(btnBuscar).click();
+		findElemento(btnBuscar).click();
 	}
 	public void buscar() {
 		esperarElemento(btnBuscar);
