@@ -63,6 +63,7 @@ public class RemaxMain extends Base{
 		Thread.sleep(2000);
 		findElemento(cerrarMenuTipo).click();
 		pressESC();
+		findElemento(tipoPropiedad).click();
 		//clickCo(btnBuscar);
 	}
 	public void buscar() {
