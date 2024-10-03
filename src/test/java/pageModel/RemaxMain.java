@@ -61,7 +61,7 @@ public class RemaxMain extends Base{
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
 		Thread.sleep(2000);
-		findElemento(cerrarMenuTipo).click();
+		//findElemento(cerrarMenuTipo).click();
 		pressESC();
 		findElemento(tipoPropiedad).click();
 		clickCo(btnBuscar);
