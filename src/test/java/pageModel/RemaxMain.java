@@ -62,16 +62,16 @@ public class RemaxMain extends Base{
 		findElemento(tipoConsultorio).click();
 		Thread.sleep(2000);
 		//findElemento(cerrarMenuTipo).click();
-		pressESC();
-		findElemento(tipoPropiedad).click();
-		clickCo(btnBuscar);
-		findElemento(btnBuscar).click();
+		pressEsc();
+		//findElemento(tipoPropiedad).click();
+		//clickCo(btnBuscar);
+		//findElemento(btnBuscar).click();
 	}
 	public void buscar() {
 		esperarElemento(btnBuscar);
 		findElemento(btnBuscar).click();
 	}
-	public void pressESC() {
+	public void pressESC2() {
 		try {
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ESCAPE);

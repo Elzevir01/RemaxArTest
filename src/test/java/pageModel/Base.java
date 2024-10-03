@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -82,6 +83,10 @@ public class Base {
 	public void clickCo(By elemento) {
 		Actions builder = new Actions(driver);   
 		builder.moveToElement(findElemento(elemento), 25, 25).click().build().perform();
+	}
+	public void pressEsc() {
+		Actions action = new Actions(driver);
+		action.sendKeys(Keys.ESCAPE).perform();
 	}
 	
 }
