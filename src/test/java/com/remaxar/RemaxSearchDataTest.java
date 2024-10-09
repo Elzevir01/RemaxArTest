@@ -74,11 +74,10 @@ public class RemaxSearchDataTest {
 		rl.esperarWeb();
 		Thread.sleep(5000);
 		rl.alquilerAVenta();
-		minimo = "5000";
-		maximo = "30000";
+		minimo = "10000";
+		maximo = "50000";
 		Log.info("ingresando filtro: monto( U$D" + minimo + " U$D" + maximo + ")");
-		rl.precio();
-		rl.montoPrecio(minimo, maximo);
+		rl.precioMonto(minimo, maximo);
 		rl.esperarWeb();
 		
 		int cc = rl.cardCount();

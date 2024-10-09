@@ -37,17 +37,16 @@ public class RemaxList extends Base {
 		Thread.sleep(3000);
 	}
 	
-	public void precio() {
+	public void precioMonto(String desde, String hasta) {
 		findElemento(btnPrecio).click();
-	}
-	
-	public void montoPrecio(String desde, String hasta){
+		esperarElemento(precioDesde);
 		findElemento(precioDesde).clear();
 		sendKey(precioDesde, desde);
 		findElemento(precioHasta).clear();
 		sendKey(precioHasta, hasta);
 		findElemento(aplicarPrecio).click();
 	}
+	
 
 	public void card1() {
 		numero = 0;

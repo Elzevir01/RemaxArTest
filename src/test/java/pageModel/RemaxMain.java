@@ -54,32 +54,22 @@ public class RemaxMain extends Base{
 			findElemento(opcionCordoba).click();
 			}
 	}
-	public void propiedad() throws InterruptedException{
+	public void propiedad(){
 		findElemento(tipoPropiedad).click();
 		//////
 		esperarElemento(tipoOficina);
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
-		Thread.sleep(2000);
-		//findElemento(cerrarMenuTipo).click();
+		//Thread.sleep(2000);
 		pressEsc();
-		//findElemento(tipoPropiedad).click();
-		//clickCo(btnBuscar);
-		//findElemento(btnBuscar).click();
+
 	}
 	public void buscar() {
 		esperarElemento(btnBuscar);
 		findElemento(btnBuscar).click();
 	}
-	public void pressESC2() {
-		try {
-		Robot robot = new Robot();
-		robot.keyPress(KeyEvent.VK_ESCAPE);
-		robot.keyPress(KeyEvent.VK_ESCAPE);
-		}catch(Exception e) {
-			
-		}
-	}
+	
+	
 	
 	
 }
