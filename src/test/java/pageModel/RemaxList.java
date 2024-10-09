@@ -37,8 +37,9 @@ public class RemaxList extends Base {
 		Thread.sleep(3000);
 	}
 	
-	public void precioMonto(String desde, String hasta) {
+	public void precioMonto(String desde, String hasta) throws InterruptedException {
 		findElemento(btnPrecio).click();
+		Thread.sleep(2000);
 		esperarElemento(precioDesde);
 		findElemento(precioDesde).clear();
 		sendKey(precioDesde, desde);
