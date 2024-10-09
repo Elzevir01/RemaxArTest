@@ -14,8 +14,8 @@ public class RemaxList extends Base {
 	private By aplicarTipo = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 	///// MENU PRECIO/////
 	private By btnPrecio = By.cssSelector("#select-price");
-	private By precioDesde = By.xpath("//*[@id='from']");
-	private By precioHasta = By.xpath("//*[@id='to']");
+	private By precioDesde = By.xpath("//*[@id='from']//div//div//div//input");
+	private By precioHasta = By.xpath("//*[@id='to']//div//div//div//input");
 	private By aplicarPrecio = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 
 	///// CARD LINK/////
