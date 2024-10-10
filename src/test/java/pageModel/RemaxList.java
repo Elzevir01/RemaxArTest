@@ -19,10 +19,10 @@ public class RemaxList extends Base {
 	private By aplicarPrecio = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 
 	///// CARD LINK/////
-	private By cardLink1 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(1)");
-	private By cardLink2 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(2)");
-	private By cardLink3 = By.cssSelector("qr-card-prop.ng-star-inserted:nth-child(3)");
-	private By cardLinkList = By.xpath("//div[@class='card-remax viewList']");
+	private By cardLink1 = By.xpath("//qr-card-property[1]");
+	private By cardLink2 = By.xpath("//qr-card-property[2]");
+	private By cardLink3 = By.xpath("//qr-card-property[3]");
+	private By cardLinkList = By.xpath("//qr-card-property");
 	///// CONSTRUCTOR/////
 	public RemaxList(WebDriver driver) {
 		super.driver = driver;
@@ -48,23 +48,8 @@ public class RemaxList extends Base {
 		findElemento(aplicarPrecio).click();
 	}
 	
-
-	public void card1() {
-		numero = 0;
-		listaNumero(cardLinkList,0).click();
-	}
-
-	public void card2() {
-		numero = 1;
-		listaNumero(cardLinkList,1).click();
-	}
-
-	public void card3() {
-		numero = 2;
-		listaNumero(cardLinkList,2).click();
-	}
 	
-	public int cardCount() {
+	/*public int cardCount() {
 		int c = 0;
 		if (checkElement(cardLink1) == true)
 			c = 1;
@@ -73,5 +58,13 @@ public class RemaxList extends Base {
 		if (checkElement(cardLink3) == true)
 			c = 3;
 		return c;
+	}*/
+	public int cardListCount() {
+		
+		return listaSize(cardLinkList);
+	}
+	public WebElement listaElement(int numero) {
+		
+		return  listaElemento(cardLinkList,numero);
 	}
 }

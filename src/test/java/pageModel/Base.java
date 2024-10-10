@@ -31,10 +31,15 @@ public class Base {
 	public WebElement findElemento(By elemento) {
 		return driver.findElement(elemento);
 	}
-	public WebElement listaNumero(By elemento, int numero) {
+	public WebElement listaElemento(By elemento, int numero) {
         List<WebElement> lista = driver.findElements(elemento);
         WebElement elementoNumero = lista.get(numero);
 		return elementoNumero;
+	}
+	public int listaSize(By elemento) {
+		List<WebElement> lista = driver.findElements(elemento);
+		return lista.size();
+		
 	}
 	
 	public void sendKey(By elemento, String texto) {

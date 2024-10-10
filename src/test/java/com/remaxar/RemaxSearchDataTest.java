@@ -80,19 +80,24 @@ public class RemaxSearchDataTest {
 		rl.precioMonto(minimo, maximo);
 		rl.esperarWeb();
 		
-		int cc = rl.cardCount();
-		Propiedad[] pr = new Propiedad[cc];// [cc+1]
+		int count = rl.cardListCount();
+		Propiedad[] pr = new Propiedad[count];// [cc+1]
 		PrintText tx = new PrintText();
 
 		//// ABRIR LAS 3 PRIMERAS TARJETAS Y CAPTURAR SUS DATOS////
 		Log.info("ingresando los 3 primeros link y recolectando sus datos");
-		for (int i = 0; i < cc; i++) {
+		if(count > 2) {
+			count = 2;
+		}
+		
+		for (int i = 0; i < count; i++) {
 			if (i == 0)
-				rl.card1();
+				rl.listaElement(0).click();
 			if (i == 1)
-				rl.card2();
+				rl.listaElement(1).click();
 			if (i == 2)
-				rl.card3();
+				rl.listaElement(2).click();
+			
 			Thread.sleep(3000);
 			rl.esperarWeb();
 			
@@ -124,7 +129,7 @@ public class RemaxSearchDataTest {
 		///// ESCRIBIR TXT LOS 3 LINK/////
 		Log.info("recolectando datos de los 3 primeros links para archivo .txt");
 		tx.crearTxt();
-		for (int t = 0; t < cc; t++) {
+		for (int t = 0; t < count; t++) {
 			Log.info(pr[t].propiedadToString());
 			tx.escribirTextos(pr[t].propiedadToString());
 		}
