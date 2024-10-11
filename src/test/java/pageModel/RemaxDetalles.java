@@ -8,16 +8,16 @@ import org.openqa.selenium.support.PageFactory;
 public class RemaxDetalles extends pageModel.Base{
 	//WebDriver driver;
 	
-	private By ilimitado = By.xpath("//li[text()='Ilimitado']");
+	//private By ilimitado = By.xpath("//li[text()='Ilimitado']");
 	//---DATOS PRINCIPADOS---//
-	private By titulo = By.cssSelector("#title-multimedia > div:nth-child(1) > h1");
-	private By precioDolar = By.cssSelector("#price-container > h3");
+	private By titulo = By.xpath("//div//h1");
+	private By precioDolar = By.xpath("//div[@id='price-container']//p");
 	private By descripcion = By.xpath("//*[@id='first-item']//*[@id='last']");
 	
 	//---DATOS EXTRAS---//
 	private By superficieTotal = By.xpath("//*[@id='second-item']//span[contains(text(),'superficie total')]");
 	private By superficieCubierta = By.xpath("//*[@id='second-item']//span[contains(text(),'superficie cubierta')]");
-	private By baños = By.xpath("//*[@id='second-item']//span[contains(text(),'ba�os')]");
+	private By baños = By.xpath("//*[@id='second-item']//span[contains(text(),'baños')]");
 	private By aptoProfesional = By.xpath("//*[@id='second-item']//span[contains(text(),'apto profesional')]");
 	private By expensas = By.xpath("//*[@id='second-item']//span[contains(text(),'expensas')]");
 	private By pisosPropiedad = By.xpath("//*[@id='second-item']//span[contains(text(),'pisos')]");

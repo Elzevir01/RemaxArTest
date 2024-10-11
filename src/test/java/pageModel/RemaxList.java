@@ -48,17 +48,6 @@ public class RemaxList extends Base {
 		findElemento(aplicarPrecio).click();
 	}
 	
-	
-	/*public int cardCount() {
-		int c = 0;
-		if (checkElement(cardLink1) == true)
-			c = 1;
-		if (checkElement(cardLink2) == true)
-			c = 2;
-		if (checkElement(cardLink3) == true)
-			c = 3;
-		return c;
-	}*/
 	public int cardListCount() {
 		
 		return listaSize(cardLinkList);
