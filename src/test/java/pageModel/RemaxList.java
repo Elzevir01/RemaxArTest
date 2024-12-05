@@ -19,9 +19,6 @@ public class RemaxList extends Base {
 	private By aplicarPrecio = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 
 	///// CARD LINK/////
-	private By cardLink1 = By.xpath("//qr-card-property[1]");
-	private By cardLink2 = By.xpath("//qr-card-property[2]");
-	private By cardLink3 = By.xpath("//qr-card-property[3]");
 	private By cardLinkList = By.xpath("//qr-card-property");
 	///// CONSTRUCTOR/////
 	public RemaxList(WebDriver driver) {
@@ -34,12 +31,12 @@ public class RemaxList extends Base {
 		esperarElemento(tipoCompra);
 		findElemento(tipoCompra).click();
 		findElemento(aplicarTipo).click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 	}
 	
 	public void precioMonto(String desde, String hasta) throws InterruptedException {
 		findElemento(btnPrecio).click();
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		esperarElemento(precioDesde);
 		findElemento(precioDesde).clear();
 		sendKey(precioDesde, desde);

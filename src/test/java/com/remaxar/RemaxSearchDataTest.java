@@ -72,7 +72,7 @@ public class RemaxSearchDataTest {
 		Log.info("ingresando filtro: cambiando alquiler por venta");
 		rl = new RemaxList(driver);
 		rl.esperarWeb();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		rl.alquilerAVenta();
 		minimo = "10000";
 		maximo = "50000";
@@ -150,7 +150,13 @@ public class RemaxSearchDataTest {
 
 	@AfterTest
 	public void TearDown(){
+		try {
 		bf.removeDriver();
+		}catch(Exception ex) {
+			Log.error("Causa : "+ex.getCause());
+			Log.error("Mensaje : "+ex.getMessage());
+			ex.printStackTrace();
+		}
 	}
 
 }
