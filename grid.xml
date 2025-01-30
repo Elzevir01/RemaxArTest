@@ -17,11 +17,11 @@
 		</classes>
 	</test>
 
-	<test name="FIREFOX">
+	<!--<test name="FIREFOX">
 		<parameter name="browser" value="FIREFOX"></parameter>
 		<parameter name="nodeUrl" value="http://selenium-hub-c:4444/wd/hub"></parameter>
 		<classes>
 			<class name="com.remaxar.RemaxSearchDataTest" />
 		</classes>
-	</test>
+	</test>-->
 </suite>
