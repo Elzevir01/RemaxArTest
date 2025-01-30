@@ -31,12 +31,12 @@ public class RemaxList extends Base {
 		esperarElemento(tipoCompra);
 		findElemento(tipoCompra).click();
 		findElemento(aplicarTipo).click();
-		//Thread.sleep(3000);
+		Thread.sleep(3000);
 	}
 	
 	public void precioMonto(String desde, String hasta) throws InterruptedException {
 		findElemento(btnPrecio).click();
-		//Thread.sleep(2000);
+		Thread.sleep(2000);
 		esperarElemento(precioDesde);
 		findElemento(precioDesde).clear();
 		sendKey(precioDesde, desde);
