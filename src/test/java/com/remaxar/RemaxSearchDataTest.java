@@ -15,6 +15,8 @@ import org.testng.annotations.AfterTest;
 
 import driver.BrowserFactoryCF;
 import driver.DriverFactory;
+import driver.DriverFactoryDirect;
+
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Link;
@@ -33,7 +35,10 @@ public class RemaxSearchDataTest {
 	String url = "";
 	WebDriver driver;
 	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);
-	BrowserFactoryCF bf = new BrowserFactoryCF();
+	//BrowserFactoryCF bf = new BrowserFactoryCF();
+	
+	//DriverFactoryDirect dfd;
+	
 	String minimo, maximo;
 	RemaxDetalles rd;
 	RemaxMain rm;
@@ -134,7 +139,7 @@ public class RemaxSearchDataTest {
 			tx.escribirTextos(pr[t].propiedadToString());
 		}
 	}
-	@BeforeTest
+	/*@BeforeTest
 	@Parameters({"browser", "nodeUrl"})
 	public void SetUp(String browser, String nodeUrl) {
 		try {
@@ -146,12 +151,20 @@ public class RemaxSearchDataTest {
 				Log.error("Mensaje : "+exc.getMessage());
 				exc.printStackTrace();
 			}
+	}*/
+	@BeforeTest
+	@Parameters("browser")
+	public void SetUp(String browser) {
+		//dfd  = new DriverFactoryDirect();
+		//driver = dfd.getDriver(browser);
+		driver = DriverFactoryDirect.getDriver(browser);
 	}
 
 	@AfterTest
 	public void TearDown(){
 		try {
-		bf.removeDriver();
+		driver.quit();
+		//bf.removeDriver();
 		}catch(Exception ex) {
 			Log.error("Causa : "+ex.getCause());
 			Log.error("Mensaje : "+ex.getMessage());
