@@ -49,10 +49,10 @@ public class Base {
 		findElemento(elemento).sendKeys(texto);
 	}
 	//// Escribir texto sin enviarlo ////
-	public void sendText(By elemento, String texto) {
+	/*public void sendText(By elemento, String texto) {
 		WebElement input = driver.findElement(elemento);
 		actions.moveToElement(input).click().sendKeys(texto).build().perform();
-	}
+	}*/
 	public void cursorTo(By elemento) {
 		new Actions(driver).moveToElement(findElemento(elemento)).perform();
 	}

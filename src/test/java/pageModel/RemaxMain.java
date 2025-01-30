@@ -18,7 +18,7 @@ public class RemaxMain extends Base{
 	private By buscador = By.xpath("//div//input");//div[@class='searcher searcher--home-searcher']");
 	
 	/////-- seleccion especifica de "Córdoba" en el buscador --/////
-	private By opcionCordoba = By.xpath("//div[text()= 'Cordoba Capital']");
+	private By opcionCordoba = By.xpath("//div[text()= 'Córdoba']");
 
 	/////-- lista Tipo de propiedad --/////
 	private By tipoPropiedad = By.xpath("//span[contains(text(), 'Tipo de propiedad')]");////*[@id=\\\"property-type\\\"]
@@ -44,7 +44,7 @@ public class RemaxMain extends Base{
 		findElemento(btnAlquilar).click();
 	}
 	public void textCordoba(){
-		sendKey(buscador, "cordoba");
+		sendKey(buscador, "cordoba capital");
 		//sendText(buscador, "cordoba");
 	}
 	public void opcionCordoba() {
