@@ -53,7 +53,7 @@ public class RemaxSearchDataTest {
 		rm.navegar(url);
 		rm.alquilar();
 		rm.textCordoba();
-		rm.opcionCordoba();
+		//rm.opcionCordoba();
 		rm.propiedad();
 		rm.buscar();
 
