@@ -13,7 +13,7 @@ import java.time.Duration;
 
 public class DriverFactoryDirect {
 
-	private static WebDriver driver;
+	private WebDriver driver;
 
 	
     public WebDriver setDriver(String browser, String nodeURL) throws MalformedURLException {
@@ -48,7 +48,7 @@ public class DriverFactoryDirect {
 		return driver;
 	}
     
-    public static void quitDriver() {
+    public void quitDriver() {
         if (driver != null) {
             driver.quit();
             driver = null;
