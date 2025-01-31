@@ -58,7 +58,7 @@ public class RemaxMain extends Base{
 	public void propiedad() throws InterruptedException{
 		findElemento(tipoPropiedad).click();
 		//////
-		esperarElemento(tipoOficina);
+		//esperarElemento(tipoOficina);
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
 		Thread.sleep(2000);
