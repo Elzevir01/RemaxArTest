@@ -37,7 +37,7 @@ public class RemaxSearchDataTest {
 	private static Logger Log = LogManager.getLogger(RemaxSearchDataTest.class);
 	//BrowserFactoryCF bf = new BrowserFactoryCF();
 	
-	//DriverFactoryDirect dfd;
+	DriverFactoryDirect dfd;
 	
 	String minimo, maximo;
 	RemaxDetalles rd;
@@ -139,26 +139,26 @@ public class RemaxSearchDataTest {
 			tx.escribirTextos(pr[t].propiedadToString());
 		}
 	}
-	/*@BeforeTest
+	@BeforeTest
 	@Parameters({"browser", "nodeUrl"})
 	public void SetUp(String browser, String nodeUrl) {
 		try {
-			bf = new BrowserFactoryCF();
-			DriverFactory.getInstance().setDriver(bf.setDriver(browser, nodeUrl));
+			dfd = new DriverFactoryDirect();
+			DriverFactory.getInstance().setDriver(dfd.setDriver(browser, nodeUrl));
 			driver = DriverFactory.getInstance().getDriver();
 			}catch(Exception exc){
 				Log.error("Causa : "+exc.getCause());
 				Log.error("Mensaje : "+exc.getMessage());
 				exc.printStackTrace();
 			}
-	}*/
-	@BeforeTest
+	}
+	/*@BeforeTest
 	@Parameters("browser")
 	public void SetUp(String browser) {
 		//dfd  = new DriverFactoryDirect();
 		//driver = dfd.getDriver(browser);
 		driver = DriverFactoryDirect.getDriver(browser);
-	}
+	}*/
 
 	@AfterTest
 	public void TearDown(){
