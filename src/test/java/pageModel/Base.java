@@ -18,8 +18,6 @@ import static org.openqa.selenium.support.locators.RelativeLocator.with;
 public class Base {
 	WebDriver driver;
 	String expectedTitle = "";
-	JavascriptExecutor js = (JavascriptExecutor) driver;
-	Actions actions = new Actions(driver);
 
 	///// CONSTRUCTOR/////
 	public Base(WebDriver driver) {
