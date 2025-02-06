@@ -21,9 +21,9 @@ public class BrowserFactoryCF {
 
 	}
 
-	private static DriverFactory instance = new DriverFactory();
+	private static DriverFactory33 instance = new DriverFactory33();
 
-	public static DriverFactory getInstance() {
+	public static DriverFactory33 getInstance() {
 		return instance;
 	}
 

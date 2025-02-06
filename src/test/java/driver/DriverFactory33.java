@@ -2,14 +2,14 @@ package driver;
 
 import org.openqa.selenium.WebDriver;
 
-public class DriverFactory {
-public DriverFactory() {
+public class DriverFactory33 {
+public DriverFactory33() {
 		
 	}
 	/////INSTANCIA//////
-	private static DriverFactory instance = new DriverFactory();
+	private static DriverFactory33 instance = new DriverFactory33();
 	
-	public static DriverFactory getInstance() {
+	public static DriverFactory33 getInstance() {
 		return instance;
 	}
 	

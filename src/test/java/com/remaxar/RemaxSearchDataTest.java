@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 
 import org.apache.log4j.BasicConfigurator;
@@ -14,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 
 import driver.BrowserFactoryCF;
-import driver.DriverFactory;
+//import driver.DriverFactory33;
 import driver.DriverFactoryDirect;
 
 import io.qameta.allure.Description;
@@ -38,6 +39,7 @@ public class RemaxSearchDataTest {
 	//BrowserFactoryCF bf = new BrowserFactoryCF();
 	
 	DriverFactoryDirect dfd;
+	private DriverFactoryDirect driverFactory;
 	
 	String minimo, maximo;
 	RemaxDetalles rd;
@@ -141,11 +143,11 @@ public class RemaxSearchDataTest {
 	}
 	@BeforeTest
 	@Parameters({"browser", "nodeUrl"})
-	public void SetUp(String browser, String nodeUrl) {
+	public void SetUp(String browser, String nodeUrl) throws MalformedURLException {
 		try {
 			dfd = new DriverFactoryDirect();
-			DriverFactory.getInstance().setDriver(dfd.setDriver(browser, nodeUrl));
-			driver = DriverFactory.getInstance().getDriver();
+			driver = dfd.setDriver(browser, nodeUrl);
+			
 			}catch(Exception exc){
 				Log.error("Causa : "+exc.getCause());
 				Log.error("Mensaje : "+exc.getMessage());

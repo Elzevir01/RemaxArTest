@@ -21,16 +21,16 @@ public class DriverFactoryDirect {
         if (driver == null) {
         	switch (browser.toString().toUpperCase()) {
     		case "CHROME":
-    			ChromeOptions capc = new ChromeOptions();
-    			driver = new RemoteWebDriver(new URL(nodeURL), capc);
+    			ChromeOptions chromeOptions = new ChromeOptions();
+    			driver = new RemoteWebDriver(new URL(nodeURL), chromeOptions);
     			break;
     		case "FIREFOX":
-    			FirefoxOptions capf = new FirefoxOptions();
-    			driver = new RemoteWebDriver(new URL(nodeURL), capf);
+    			FirefoxOptions firefoxOptions = new FirefoxOptions();
+    			driver = new RemoteWebDriver(new URL(nodeURL), firefoxOptions);
     			break;
     		case "EDGE":
-    			EdgeOptions cape = new EdgeOptions();
-    			driver = new RemoteWebDriver(new URL(nodeURL), cape);
+    			EdgeOptions edgeOptions = new EdgeOptions();
+    			driver = new RemoteWebDriver(new URL(nodeURL), edgeOptions);
     			break;
 
     		}
@@ -50,6 +50,7 @@ public class DriverFactoryDirect {
     
     public void quitDriver() {
         if (driver != null) {
+        	System.out.println("🛑 Cerrando navegador...");
             driver.quit();
             driver = null;
         }
