@@ -9,7 +9,7 @@
 			<class name="com.remaxar.RemaxSearchDataTest" />
 		</classes>
 	</test>
-	<test name="EDGE">
+	<!--<test name="EDGE">
 		<parameter name="browser" value="EDGE"></parameter>
 		<parameter name="nodeUrl" value="http://selenium-hub-c:4444/wd/hub"></parameter>
 		<classes>
@@ -17,7 +17,7 @@
 		</classes>
 	</test>
 
-	<!--<test name="FIREFOX">
+	<test name="FIREFOX">
 		<parameter name="browser" value="FIREFOX"></parameter>
 		<parameter name="nodeUrl" value="http://selenium-hub-c:4444/wd/hub"></parameter>
 		<classes>
