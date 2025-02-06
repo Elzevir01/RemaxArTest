@@ -58,6 +58,7 @@ public class RemaxSearchDataTest {
 		url = "https://www.remax.com.ar/";
 		Log.info("ingresando a remax.com");
 		rm.navegar(url);
+		Thread.sleep(3000);
 		rm.alquilar();
 		rm.textCordoba();
 		//rm.opcionCordoba();
