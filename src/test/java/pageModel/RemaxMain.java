@@ -27,7 +27,7 @@ public class RemaxMain extends Base{
 	private By cerrarMenuTipo = By.xpath("//div[@class='cdk-overlay-container']");
 	
 	/////-- iniciar la busqueda --/////
-	private By btnBuscar = By.xpath("//button[@id='button-search']");
+	private By btnBuscar = By.xpath("//button//qr-icon");
 
 	///// CONSTRUCTOR/////
 	public RemaxMain(WebDriver driver) {
