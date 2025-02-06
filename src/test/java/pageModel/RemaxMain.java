@@ -41,7 +41,13 @@ public class RemaxMain extends Base{
 	
 	//////METODOS /////
 	public void alquilar() {
-		findElemento(btnAlquilar).click();
+		esperarElemento(btnAlquilar);
+		
+		if(checkElement(btnAlquilar)) {
+			System.out.println("elemento encontrado: boton alquilar");
+			findElemento(btnAlquilar).click();
+			}
+		//findElemento(btnAlquilar).click();
 	}
 	public void textCordoba(){
 		sendKey(buscador, "cordoba capital");
@@ -58,7 +64,7 @@ public class RemaxMain extends Base{
 	public void propiedad() throws InterruptedException{
 		findElemento(tipoPropiedad).click();
 		//////
-		//esperarElemento(tipoOficina);
+		esperarElemento(tipoOficina);
 		findElemento(tipoOficina).click();
 		findElemento(tipoConsultorio).click();
 		Thread.sleep(2000);
