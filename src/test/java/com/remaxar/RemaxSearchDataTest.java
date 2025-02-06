@@ -61,7 +61,7 @@ public class RemaxSearchDataTest {
 		Thread.sleep(3000);
 		rm.alquilar();
 		rm.textCordoba();
-		//rm.opcionCordoba();
+		rm.opcionCordoba();
 		rm.propiedad();
 		rm.buscar();
 
