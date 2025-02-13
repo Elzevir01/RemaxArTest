@@ -3,7 +3,6 @@ package pageModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class RemaxList extends Base {
@@ -14,8 +13,8 @@ public class RemaxList extends Base {
 	private By aplicarTipo = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 	///// MENU PRECIO/////
 	private By btnPrecio = By.cssSelector("#select-price");
-	private By precioDesde = By.xpath("//*[@id='from']//div//div//div//input");
-	private By precioHasta = By.xpath("//*[@id='to']//div//div//div//input");
+	private By precioDesde = By.xpath("//*[@id='from']");
+	private By precioHasta = By.xpath("//*[@id='to']");
 	private By aplicarPrecio = By.xpath("//button[contains(text(),'Aplicar filtro')]");
 
 	///// CARD LINK/////
