@@ -50,9 +50,13 @@ public class DriverFactoryDirect {
     
     public void quitDriver() {
         if (driver != null) {
+        	try {
         	System.out.println("🛑 Cerrando navegador...");
             driver.quit();
             driver = null;
+        	}catch(Exception e) {
+        		System.out.println("🛑 Error quit driver: "+e);
+        	}
         }
     }
 
