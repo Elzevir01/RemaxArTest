@@ -12,6 +12,6 @@ Finalmente ingresar a los tres primeros resultados de búsqueda, recolectar los 
    - Ingresar en el campo de busqueda la palabra "Cordoba", despliega una lista de la que se seleccionara "Capital, Cordoba" dandole click.
    - Hacer click en el menu desplegable "Tipo de propiedad" y seleccionar los campos: "Consultorio" y "Oficina".
    - Click en el boton "Buscar"
-
+2. 
 
 
