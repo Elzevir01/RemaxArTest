@@ -7,11 +7,11 @@ Finalmente ingresar a los tres primeros resultados de búsqueda, recolectar los 
 
 > Navegar hacia la web e ingresar filtros iniciales de busqueda
 
-1.Navegar a "https://www.remax.com.ar/".
-2.Hacer click en el boton "Quiero alquilar" para filtrar con este parametro.
-3.Ingresar en el campo de busqueda la palabra "Cordoba", despliega una lista de la que se seleccionara "Capital, Cordoba" dandole click.
-4.Hacer click en el menu desplegable "Tipo de propiedad" y seleccionar los campos: "Consultorio" y "Oficina".
-5.Click en el boton "Buscar"
+1. Navegar a "https://www.remax.com.ar/".
+2. Hacer click en el boton "Quiero alquilar" para filtrar con este parametro.
+3. Ingresar en el campo de busqueda la palabra "Cordoba", despliega una lista de la que se seleccionara "Capital, Cordoba" dandole click.
+4. Hacer click en el menu desplegable "Tipo de propiedad" y seleccionar los campos: "Consultorio" y "Oficina".
+5. Click en el boton "Buscar"
 
 
 
