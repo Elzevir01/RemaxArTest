@@ -15,7 +15,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 
 import driver.BrowserFactoryCF;
-//import driver.DriverFactory33;
 import driver.DriverFactoryDirect;
 
 import io.qameta.allure.Description;
@@ -155,13 +154,6 @@ public class RemaxSearchDataTest {
 				exc.printStackTrace();
 			}
 	}
-	/*@BeforeTest
-	@Parameters("browser")
-	public void SetUp(String browser) {
-		//dfd  = new DriverFactoryDirect();
-		//driver = dfd.getDriver(browser);
-		driver = DriverFactoryDirect.getDriver(browser);
-	}*/
 
 	@AfterTest
 	public void TearDown(){
